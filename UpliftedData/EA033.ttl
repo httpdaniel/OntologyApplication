@@ -1,0 +1,1406 @@
+<http://www.example.org/EA033Record/105>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Sligo" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "43395" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/60>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Kerry" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.7" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/32>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Dun_LaoghaireRathdown" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "21.7" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/118>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Westmeath" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.8" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/73>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Leitrim" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "21522" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/45>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "State" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "3003490" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/17>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Carlow" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "35230" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/86>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Monaghan" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/58>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Kerry" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.9" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/99>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Roscommon" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "43328" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/112>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Tipperary" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.3" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/5>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Clare" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "76921" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/11>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Cork_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "269448" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/125>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Wexford" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "97353" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/80>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Laois" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.5" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/52>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Kildare" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "20.1" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/24>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Dublin" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "20.6" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/93>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Offaly" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "49834" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/65>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear> "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Louth" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "78939" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/37>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Galway" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "46506" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/78>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Laois" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.7" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/104>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "South_Dublin" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.7" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/31>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Dun_LaoghaireRathdown" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "143635" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/117>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Westmeath" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "55422" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/72>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Limerick_and_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.7" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/44>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Galway_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "20" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/16>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Cavan" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.9" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/85>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Monaghan" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "39720" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/57>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Kerry" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "99314" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/29>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "LaoghaireRathdown" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "136577" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/98>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Roscommon" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.6" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/111>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Tipperary" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "105914" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/4>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Cork" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "20.3" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/10>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Cork_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.4" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/124>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Wicklow" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "20.2" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/51>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Kildare" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "137674" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/23>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Dublin" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "380754" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/92>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Mayo" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.4" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/109>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Tipperary" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "106264" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/64>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Longford" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.3" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/36>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Fingal" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "20.4" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/77>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Laois" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "51520" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/49>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Kildare" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "131591" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/103>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "South_Dublin" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "174290" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/30>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Dun_LaoghaireRathdown" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "20.9" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/116>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Waterford_and_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.7" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/71>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Limerick_and_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "125859" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/43>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Galway_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "116824" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/9>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Cork_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "261541" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/15>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Cavan" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "49315" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/84>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Meath" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.6" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/56>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Kilkenny" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.6" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/28>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Donegal" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.9" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/97>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Roscommon" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "43541" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/69>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Limerick_and_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "124354" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/110>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Tipperary" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.6" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/3>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Cork" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "83596" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/123>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Wicklow" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "92407" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/50>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Kildare" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.4" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/22>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Dublin" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.6" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/91>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Mayo" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "88656" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/108>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Sligo" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.9" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/63>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Longford" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "26158" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/35>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Fingal" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "180150" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/76>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Leitrim" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.6" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/48>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "State" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.9" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/89>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Mayo" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "88705" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/102>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "South_Dublin" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/115>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Waterford_and_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "76314" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/70>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Limerick_and_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/42>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Galway_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.1" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/8>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Clare" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "20" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/14>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Cavan" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.4" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/128>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Wexford" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.9" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/83>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Meath" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "121379" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/55>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Kilkenny" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "65454" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/27>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Donegal" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "104708" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/96>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Offaly" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/68>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Louth" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.3" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/2>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Cork" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.4" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/122>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Wicklow" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.4" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/21>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Dublin" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "359219" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/90>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Mayo" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.5" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/107>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Sligo" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "43330" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/62>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Longford" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.4" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/34>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Fingal" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.8" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/75>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Leitrim" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "21584" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/47>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "State" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "3097052" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/19>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Carlow" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "36554" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/88>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Monaghan" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.8" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/101>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "South_Dublin" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "168911" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/114>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Waterford_and_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.8" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/41>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Galway_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "115068" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/7>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Clare" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "77762" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/13>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Cavan" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "47476" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/127>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Wexford" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "100606" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/82>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Meath" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.9" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/54>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Kilkenny" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.8" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/26>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Donegal" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.1" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/95>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Offaly" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "50383" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/67>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Louth" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "81745" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/39>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Galway" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "48517" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/1>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Cork" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "80437" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/121>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Wicklow" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "88786" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/20>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Carlow" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.5" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/106>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Sligo" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.1" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/61>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Longford" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "25341" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/33>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Fingal" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "169614" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/119>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Westmeath" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "56684" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/74>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Leitrim" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.7" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/46>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "State" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.1" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/18>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Carlow" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.8" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/87>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Monaghan" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "39928" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/59>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Kerry" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "100813" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/100>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Roscommon" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.4" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/113>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Waterford_and_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "74812" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/40>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Galway" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "22" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/6>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Clare" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.2" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/12>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Cork_County" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "20.1" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/126>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Wexford" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.2" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/81>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Meath" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "116661" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/53>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Kilkenny" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "63173" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/25>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Donegal" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "105743" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/94>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Offaly" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.3" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/66>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Louth" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "18.6" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/38>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology#county>
+                "Galway" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "21" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .
+
+<http://www.example.org/EA033Record/79>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Laois" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "53283" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Number_of_Persons_(Number)" .
+
+<http://www.example.org/EA033Record/120>
+        a       <https://w3id.org/survey-ontology#Survey> ;
+        <http://dbpedia.org/ontology#censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology#county>
+                "Westmeath" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#frequency>
+                "19.7" ;
+        <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory>
+                "Average_Age_Education_Ceased_(Number)" .

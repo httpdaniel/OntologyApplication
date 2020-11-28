@@ -1,0 +1,1871 @@
+<http://www.example.org/record/MedianEarning/Offaly/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Offaly" ;
+        <http://schema.org/median>
+                "36327" .
+
+<http://www.example.org/record/MedianEarning/Wicklow/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Wicklow" ;
+        <http://schema.org/median>
+                "44300" .
+
+<http://www.example.org/record/MedianEarning/Leitrim/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Leitrim" ;
+        <http://schema.org/median>
+                "35380" .
+
+<http://www.example.org/record/MedianEarning/Cavan/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Cavan" ;
+        <http://schema.org/median>
+                "35532" .
+
+<http://www.example.org/record/MedianEarning/Longford/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Longford" ;
+        <http://schema.org/median>
+                "36356" .
+
+<http://www.example.org/record/MedianEarning/Galway/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Galway" ;
+        <http://schema.org/median>
+                "37650" .
+
+<http://www.example.org/record/MedianEarning/Kilkenny/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Kilkenny" ;
+        <http://schema.org/median>
+                "36946" .
+
+<http://www.example.org/record/MedianEarning/Monaghan/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Monaghan" ;
+        <http://schema.org/median>
+                "33614" .
+
+<http://www.example.org/record/MedianEarning/Waterford/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Waterford" ;
+        <http://schema.org/median>
+                "39501" .
+
+<http://www.example.org/record/MedianEarning/Kerry/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Kerry" ;
+        <http://schema.org/median>
+                "35449" .
+
+<http://www.example.org/record/MedianEarning/Limerick/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Limerick" ;
+        <http://schema.org/median>
+                "38586" .
+
+<http://www.example.org/record/MedianEarning/Meath/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Meath" ;
+        <http://schema.org/median>
+                "41262" .
+
+<http://www.example.org/record/MedianEarning/Westmeath/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Westmeath" ;
+        <http://schema.org/median>
+                "40113" .
+
+<http://www.example.org/record/MedianEarning/Tipperary/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Tipperary" ;
+        <http://schema.org/median>
+                "36232" .
+
+<http://www.example.org/record/MedianEarning/Laois/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Laois" ;
+        <http://schema.org/median>
+                "37313" .
+
+<http://www.example.org/record/MedianEarning/Mayo/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Mayo" ;
+        <http://schema.org/median>
+                "35443" .
+
+<http://www.example.org/record/MedianEarning/Kildare/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Kildare" ;
+        <http://schema.org/median>
+                "42561" .
+
+<http://www.example.org/record/MedianEarning/Clare/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Clare" ;
+        <http://schema.org/median>
+                "39309" .
+
+<http://www.example.org/record/MedianEarning/Donegal/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Donegal" ;
+        <http://schema.org/median>
+                "33776" .
+
+<http://www.example.org/record/MedianEarning/Offaly/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Offaly" ;
+        <http://schema.org/median>
+                "35513" .
+
+<http://www.example.org/record/MedianEarning/Wicklow/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Wicklow" ;
+        <http://schema.org/median>
+                "41567" .
+
+<http://www.example.org/record/MedianEarning/Dublin/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Dublin" ;
+        <http://schema.org/median>
+                "50801" .
+
+<http://www.example.org/record/MedianEarning/Sligo/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Sligo" ;
+        <http://schema.org/median>
+                "37682" .
+
+<http://www.example.org/record/MedianEarning/Cork/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Cork" ;
+        <http://schema.org/median>
+                "40329" .
+
+<http://www.example.org/record/MedianEarning/Longford/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Longford" ;
+        <http://schema.org/median>
+                "34489" .
+
+<http://www.example.org/record/MedianEarning/Carlow/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Carlow" ;
+        <http://schema.org/median>
+                "35720" .
+
+<http://www.example.org/record/MedianEarning/Monaghan/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Monaghan" ;
+        <http://schema.org/median>
+                "32716" .
+
+<http://www.example.org/record/MedianEarning/Roscommon/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Roscommon" ;
+        <http://schema.org/median>
+                "37461" .
+
+<http://www.example.org/record/MedianEarning/Waterford/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Waterford" ;
+        <http://schema.org/median>
+                "37109" .
+
+<http://www.example.org/record/MedianEarning/Louth/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Louth" ;
+        <http://schema.org/median>
+                "36802" .
+
+<http://www.example.org/record/MedianEarning/Wexford/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Wexford" ;
+        <http://schema.org/median>
+                "34824" .
+
+<http://www.example.org/record/MedianEarning/Westmeath/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Westmeath" ;
+        <http://schema.org/median>
+                "37038" .
+
+<http://www.example.org/record/MedianEarning/Leitrim/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Leitrim" ;
+        <http://schema.org/median>
+                "36191" .
+
+<http://www.example.org/record/MedianEarning/Cavan/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Cavan" ;
+        <http://schema.org/median>
+                "37243" .
+
+<http://www.example.org/record/MedianEarning/Galway/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Galway" ;
+        <http://schema.org/median>
+                "38331" .
+
+<http://www.example.org/record/MedianEarning/Kilkenny/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Kilkenny" ;
+        <http://schema.org/median>
+                "37357" .
+
+<http://www.example.org/record/MedianEarning/Donegal/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Donegal" ;
+        <http://schema.org/median>
+                "32046" .
+
+<http://www.example.org/record/MedianEarning/Kerry/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Kerry" ;
+        <http://schema.org/median>
+                "36038" .
+
+<http://www.example.org/record/MedianEarning/Limerick/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Limerick" ;
+        <http://schema.org/median>
+                "39938" .
+
+<http://www.example.org/record/MedianEarning/Meath/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Meath" ;
+        <http://schema.org/median>
+                "42974" .
+
+<http://www.example.org/record/MedianEarning/Dublin/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Dublin" ;
+        <http://schema.org/median>
+                "44764" .
+
+<http://www.example.org/record/MedianEarning/Sligo/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Sligo" ;
+        <http://schema.org/median>
+                "36583" .
+
+<http://www.example.org/record/MedianEarning/Laois/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Laois" ;
+        <http://schema.org/median>
+                "37577" .
+
+<http://www.example.org/record/MedianEarning/Tipperary/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Tipperary" ;
+        <http://schema.org/median>
+                "36790" .
+
+<http://www.example.org/record/MedianEarning/Mayo/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Mayo" ;
+        <http://schema.org/median>
+                "36113" .
+
+<http://www.example.org/record/MedianEarning/Kildare/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Kildare" ;
+        <http://schema.org/median>
+                "45623" .
+
+<http://www.example.org/record/MedianEarning/Carlow/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Carlow" ;
+        <http://schema.org/median>
+                "34974" .
+
+<http://www.example.org/record/MedianEarning/Clare/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Clare" ;
+        <http://schema.org/median>
+                "41147" .
+
+<http://www.example.org/record/MedianEarning/Roscommon/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Roscommon" ;
+        <http://schema.org/median>
+                "35803" .
+
+<http://www.example.org/record/MedianEarning/Wexford/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Wexford" ;
+        <http://schema.org/median>
+                "33792" .
+
+<http://www.example.org/record/MedianEarning/Offaly/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Offaly" ;
+        <http://schema.org/median>
+                "36261" .
+
+<http://www.example.org/record/MedianEarning/Wicklow/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Wicklow" ;
+        <http://schema.org/median>
+                "42678" .
+
+<http://www.example.org/record/MedianEarning/Cork/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Cork" ;
+        <http://schema.org/median>
+                "42315" .
+
+<http://www.example.org/record/MedianEarning/Leitrim/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Leitrim" ;
+        <http://schema.org/median>
+                "34556" .
+
+<http://www.example.org/record/MedianEarning/Cavan/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Cavan" ;
+        <http://schema.org/median>
+                "34646" .
+
+<http://www.example.org/record/MedianEarning/Longford/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Longford" ;
+        <http://schema.org/median>
+                "34820" .
+
+<http://www.example.org/record/MedianEarning/Monaghan/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Monaghan" ;
+        <http://schema.org/median>
+                "32902" .
+
+<http://www.example.org/record/MedianEarning/Waterford/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Waterford" ;
+        <http://schema.org/median>
+                "37702" .
+
+<http://www.example.org/record/MedianEarning/Louth/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Louth" ;
+        <http://schema.org/median>
+                "38113" .
+
+<http://www.example.org/record/MedianEarning/Kerry/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Kerry" ;
+        <http://schema.org/median>
+                "34886" .
+
+<http://www.example.org/record/MedianEarning/Limerick/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Limerick" ;
+        <http://schema.org/median>
+                "38279" .
+
+<http://www.example.org/record/MedianEarning/Meath/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Meath" ;
+        <http://schema.org/median>
+                "41128" .
+
+<http://www.example.org/record/MedianEarning/Westmeath/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Westmeath" ;
+        <http://schema.org/median>
+                "38360" .
+
+<http://www.example.org/record/MedianEarning/Tipperary/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Tipperary" ;
+        <http://schema.org/median>
+                "35869" .
+
+<http://www.example.org/record/MedianEarning/Mayo/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Mayo" ;
+        <http://schema.org/median>
+                "34723" .
+
+<http://www.example.org/record/MedianEarning/Galway/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Galway" ;
+        <http://schema.org/median>
+                "40344" .
+
+<http://www.example.org/record/MedianEarning/Kildare/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Kildare" ;
+        <http://schema.org/median>
+                "41991" .
+
+<http://www.example.org/record/MedianEarning/Kilkenny/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Kilkenny" ;
+        <http://schema.org/median>
+                "38618" .
+
+<http://www.example.org/record/MedianEarning/Clare/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Clare" ;
+        <http://schema.org/median>
+                "38926" .
+
+<http://www.example.org/record/MedianEarning/Donegal/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Donegal" ;
+        <http://schema.org/median>
+                "32232" .
+
+<http://www.example.org/record/MedianEarning/Dublin/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Dublin" ;
+        <http://schema.org/median>
+                "47216" .
+
+<http://www.example.org/record/MedianEarning/Sligo/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Sligo" ;
+        <http://schema.org/median>
+                "37223" .
+
+<http://www.example.org/record/MedianEarning/Cork/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Cork" ;
+        <http://schema.org/median>
+                "39504" .
+
+<http://www.example.org/record/MedianEarning/Laois/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Laois" ;
+        <http://schema.org/median>
+                "39108" .
+
+<http://www.example.org/record/MedianEarning/Longford/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Longford" ;
+        <http://schema.org/median>
+                "33632" .
+
+<http://www.example.org/record/MedianEarning/Carlow/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Carlow" ;
+        <http://schema.org/median>
+                "35320" .
+
+<http://www.example.org/record/MedianEarning/Roscommon/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Roscommon" ;
+        <http://schema.org/median>
+                "36866" .
+
+<http://www.example.org/record/MedianEarning/Waterford/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Waterford" ;
+        <http://schema.org/median>
+                "37003" .
+
+<http://www.example.org/record/MedianEarning/Louth/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Louth" ;
+        <http://schema.org/median>
+                "35974" .
+
+<http://www.example.org/record/MedianEarning/Wexford/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Wexford" ;
+        <http://schema.org/median>
+                "33933" .
+
+<http://www.example.org/record/MedianEarning/Offaly/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Offaly" ;
+        <http://schema.org/median>
+                "37017" .
+
+<http://www.example.org/record/MedianEarning/Wicklow/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Wicklow" ;
+        <http://schema.org/median>
+                "45743" .
+
+<http://www.example.org/record/MedianEarning/Westmeath/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Westmeath" ;
+        <http://schema.org/median>
+                "37187" .
+
+<http://www.example.org/record/MedianEarning/Leitrim/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Leitrim" ;
+        <http://schema.org/median>
+                "35789" .
+
+<http://www.example.org/record/MedianEarning/Cavan/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Cavan" ;
+        <http://schema.org/median>
+                "35685" .
+
+<http://www.example.org/record/MedianEarning/Galway/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Galway" ;
+        <http://schema.org/median>
+                "37802" .
+
+<http://www.example.org/record/MedianEarning/Kilkenny/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Kilkenny" ;
+        <http://schema.org/median>
+                "37054" .
+
+<http://www.example.org/record/MedianEarning/Monaghan/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Monaghan" ;
+        <http://schema.org/median>
+                "34685" .
+
+<http://www.example.org/record/MedianEarning/Donegal/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Donegal" ;
+        <http://schema.org/median>
+                "32018" .
+
+<http://www.example.org/record/MedianEarning/Kerry/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Kerry" ;
+        <http://schema.org/median>
+                "35915" .
+
+<http://www.example.org/record/MedianEarning/Limerick/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Limerick" ;
+        <http://schema.org/median>
+                "39313" .
+
+<http://www.example.org/record/MedianEarning/Meath/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Meath" ;
+        <http://schema.org/median>
+                "41550" .
+
+<http://www.example.org/record/MedianEarning/Dublin/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Dublin" ;
+        <http://schema.org/median>
+                "44326" .
+
+<http://www.example.org/record/MedianEarning/Tipperary/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Tipperary" ;
+        <http://schema.org/median>
+                "36691" .
+
+<http://www.example.org/record/MedianEarning/Laois/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Laois" ;
+        <http://schema.org/median>
+                "36963" .
+
+<http://www.example.org/record/MedianEarning/Mayo/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Mayo" ;
+        <http://schema.org/median>
+                "35854" .
+
+<http://www.example.org/record/MedianEarning/Kildare/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Kildare" ;
+        <http://schema.org/median>
+                "43571" .
+
+<http://www.example.org/record/MedianEarning/Clare/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Clare" ;
+        <http://schema.org/median>
+                "40007" .
+
+<http://www.example.org/record/MedianEarning/Offaly/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Offaly" ;
+        <http://schema.org/median>
+                "35585" .
+
+<http://www.example.org/record/MedianEarning/Wicklow/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Wicklow" ;
+        <http://schema.org/median>
+                "41515" .
+
+<http://www.example.org/record/MedianEarning/Sligo/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Sligo" ;
+        <http://schema.org/median>
+                "38243" .
+
+<http://www.example.org/record/MedianEarning/Cork/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Cork" ;
+        <http://schema.org/median>
+                "40975" .
+
+<http://www.example.org/record/MedianEarning/Cavan/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Cavan" ;
+        <http://schema.org/median>
+                "34657" .
+
+<http://www.example.org/record/MedianEarning/Longford/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Longford" ;
+        <http://schema.org/median>
+                "34542" .
+
+<http://www.example.org/record/MedianEarning/Carlow/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Carlow" ;
+        <http://schema.org/median>
+                "36494" .
+
+<http://www.example.org/record/MedianEarning/Monaghan/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Monaghan" ;
+        <http://schema.org/median>
+                "32743" .
+
+<http://www.example.org/record/MedianEarning/Roscommon/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Roscommon" ;
+        <http://schema.org/median>
+                "38628" .
+
+<http://www.example.org/record/MedianEarning/Waterford/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Waterford" ;
+        <http://schema.org/median>
+                "37154" .
+
+<http://www.example.org/record/MedianEarning/Louth/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Louth" ;
+        <http://schema.org/median>
+                "37343" .
+
+<http://www.example.org/record/MedianEarning/Wexford/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Wexford" ;
+        <http://schema.org/median>
+                "35511" .
+
+<http://www.example.org/record/MedianEarning/Westmeath/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Westmeath" ;
+        <http://schema.org/median>
+                "37445" .
+
+<http://www.example.org/record/MedianEarning/Leitrim/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Leitrim" ;
+        <http://schema.org/median>
+                "37238" .
+
+<http://www.example.org/record/MedianEarning/Galway/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Galway" ;
+        <http://schema.org/median>
+                "39449" .
+
+<http://www.example.org/record/MedianEarning/Kilkenny/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Kilkenny" ;
+        <http://schema.org/median>
+                "37594" .
+
+<http://www.example.org/record/MedianEarning/Donegal/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Donegal" ;
+        <http://schema.org/median>
+                "32223" .
+
+<http://www.example.org/record/MedianEarning/Kerry/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Kerry" ;
+        <http://schema.org/median>
+                "36966" .
+
+<http://www.example.org/record/MedianEarning/Limerick/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Limerick" ;
+        <http://schema.org/median>
+                "40894" .
+
+<http://www.example.org/record/MedianEarning/Meath/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Meath" ;
+        <http://schema.org/median>
+                "43942" .
+
+<http://www.example.org/record/MedianEarning/Dublin/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Dublin" ;
+        <http://schema.org/median>
+                "45299" .
+
+<http://www.example.org/record/MedianEarning/Sligo/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Sligo" ;
+        <http://schema.org/median>
+                "36555" .
+
+<http://www.example.org/record/MedianEarning/Laois/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Laois" ;
+        <http://schema.org/median>
+                "38023" .
+
+<http://www.example.org/record/MedianEarning/Tipperary/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Tipperary" ;
+        <http://schema.org/median>
+                "37670" .
+
+<http://www.example.org/record/MedianEarning/Mayo/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Mayo" ;
+        <http://schema.org/median>
+                "37703" .
+
+<http://www.example.org/record/MedianEarning/Kildare/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Kildare" ;
+        <http://schema.org/median>
+                "47044" .
+
+<http://www.example.org/record/MedianEarning/Carlow/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Carlow" ;
+        <http://schema.org/median>
+                "34715" .
+
+<http://www.example.org/record/MedianEarning/Clare/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Clare" ;
+        <http://schema.org/median>
+                "42241" .
+
+<http://www.example.org/record/MedianEarning/Roscommon/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Roscommon" ;
+        <http://schema.org/median>
+                "35996" .
+
+<http://www.example.org/record/MedianEarning/Wexford/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Wexford" ;
+        <http://schema.org/median>
+                "33983" .
+
+<http://www.example.org/record/MedianEarning/Offaly/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Offaly" ;
+        <http://schema.org/median>
+                "36471" .
+
+<http://www.example.org/record/MedianEarning/Wicklow/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Wicklow" ;
+        <http://schema.org/median>
+                "43340" .
+
+<http://www.example.org/record/MedianEarning/Cork/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Cork" ;
+        <http://schema.org/median>
+                "44134" .
+
+<http://www.example.org/record/MedianEarning/Leitrim/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Leitrim" ;
+        <http://schema.org/median>
+                "35036" .
+
+<http://www.example.org/record/MedianEarning/Cavan/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Cavan" ;
+        <http://schema.org/median>
+                "35004" .
+
+<http://www.example.org/record/MedianEarning/Longford/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Longford" ;
+        <http://schema.org/median>
+                "35187" .
+
+<http://www.example.org/record/MedianEarning/Monaghan/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Monaghan" ;
+        <http://schema.org/median>
+                "32851" .
+
+<http://www.example.org/record/MedianEarning/Waterford/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Waterford" ;
+        <http://schema.org/median>
+                "38602" .
+
+<http://www.example.org/record/MedianEarning/Louth/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Louth" ;
+        <http://schema.org/median>
+                "39479" .
+
+<http://www.example.org/record/MedianEarning/Kerry/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Kerry" ;
+        <http://schema.org/median>
+                "35015" .
+
+<http://www.example.org/record/MedianEarning/Limerick/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Limerick" ;
+        <http://schema.org/median>
+                "38858" .
+
+<http://www.example.org/record/MedianEarning/Meath/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Meath" ;
+        <http://schema.org/median>
+                "40968" .
+
+<http://www.example.org/record/MedianEarning/Westmeath/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Westmeath" ;
+        <http://schema.org/median>
+                "38930" .
+
+<http://www.example.org/record/MedianEarning/Tipperary/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Tipperary" ;
+        <http://schema.org/median>
+                "35902" .
+
+<http://www.example.org/record/MedianEarning/Mayo/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Mayo" ;
+        <http://schema.org/median>
+                "34923" .
+
+<http://www.example.org/record/MedianEarning/Galway/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Galway" ;
+        <http://schema.org/median>
+                "41765" .
+
+<http://www.example.org/record/MedianEarning/Kildare/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Kildare" ;
+        <http://schema.org/median>
+                "42146" .
+
+<http://www.example.org/record/MedianEarning/Kilkenny/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Kilkenny" ;
+        <http://schema.org/median>
+                "40080" .
+
+<http://www.example.org/record/MedianEarning/Clare/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Clare" ;
+        <http://schema.org/median>
+                "38821" .
+
+<http://www.example.org/record/MedianEarning/Donegal/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Donegal" ;
+        <http://schema.org/median>
+                "32600" .
+
+<http://www.example.org/record/MedianEarning/Wicklow/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Wicklow" ;
+        <http://schema.org/median>
+                "41846" .
+
+<http://www.example.org/record/MedianEarning/Dublin/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Dublin" ;
+        <http://schema.org/median>
+                "48771" .
+
+<http://www.example.org/record/MedianEarning/Sligo/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Sligo" ;
+        <http://schema.org/median>
+                "37672" .
+
+<http://www.example.org/record/MedianEarning/Cork/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Cork" ;
+        <http://schema.org/median>
+                "39771" .
+
+<http://www.example.org/record/MedianEarning/Laois/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Laois" ;
+        <http://schema.org/median>
+                "40307" .
+
+<http://www.example.org/record/MedianEarning/Longford/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Longford" ;
+        <http://schema.org/median>
+                "33906" .
+
+<http://www.example.org/record/MedianEarning/Carlow/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Carlow" ;
+        <http://schema.org/median>
+                "35764" .
+
+<http://www.example.org/record/MedianEarning/Monaghan/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Monaghan" ;
+        <http://schema.org/median>
+                "32668" .
+
+<http://www.example.org/record/MedianEarning/Roscommon/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Roscommon" ;
+        <http://schema.org/median>
+                "36897" .
+
+<http://www.example.org/record/MedianEarning/Waterford/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Waterford" ;
+        <http://schema.org/median>
+                "36884" .
+
+<http://www.example.org/record/MedianEarning/Louth/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Louth" ;
+        <http://schema.org/median>
+                "36537" .
+
+<http://www.example.org/record/MedianEarning/Wexford/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Wexford" ;
+        <http://schema.org/median>
+                "34558" .
+
+<http://www.example.org/record/MedianEarning/Offaly/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Offaly" ;
+        <http://schema.org/median>
+                "38249" .
+
+<http://www.example.org/record/MedianEarning/Westmeath/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Westmeath" ;
+        <http://schema.org/median>
+                "37072" .
+
+<http://www.example.org/record/MedianEarning/Leitrim/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Leitrim" ;
+        <http://schema.org/median>
+                "35456" .
+
+<http://www.example.org/record/MedianEarning/Cavan/2017>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2017" ;
+        <http://dbpedia.org/ontology/county>
+                "Cavan" ;
+        <http://schema.org/median>
+                "36153" .
+
+<http://www.example.org/record/MedianEarning/Galway/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Galway" ;
+        <http://schema.org/median>
+                "38137" .
+
+<http://www.example.org/record/MedianEarning/Kilkenny/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Kilkenny" ;
+        <http://schema.org/median>
+                "37114" .
+
+<http://www.example.org/record/MedianEarning/Donegal/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Donegal" ;
+        <http://schema.org/median>
+                "32075" .
+
+<http://www.example.org/record/MedianEarning/Kerry/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Kerry" ;
+        <http://schema.org/median>
+                "35315" .
+
+<http://www.example.org/record/MedianEarning/Limerick/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Limerick" ;
+        <http://schema.org/median>
+                "39939" .
+
+<http://www.example.org/record/MedianEarning/Meath/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Meath" ;
+        <http://schema.org/median>
+                "42195" .
+
+<http://www.example.org/record/MedianEarning/Dublin/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Dublin" ;
+        <http://schema.org/median>
+                "44414" .
+
+<http://www.example.org/record/MedianEarning/Laois/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Laois" ;
+        <http://schema.org/median>
+                "37224" .
+
+<http://www.example.org/record/MedianEarning/Tipperary/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Tipperary" ;
+        <http://schema.org/median>
+                "37061" .
+
+<http://www.example.org/record/MedianEarning/Mayo/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Mayo" ;
+        <http://schema.org/median>
+                "35786" .
+
+<http://www.example.org/record/MedianEarning/Kildare/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Kildare" ;
+        <http://schema.org/median>
+                "44395" .
+
+<http://www.example.org/record/MedianEarning/Clare/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Clare" ;
+        <http://schema.org/median>
+                "40141" .
+
+<http://www.example.org/record/MedianEarning/Roscommon/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Roscommon" ;
+        <http://schema.org/median>
+                "35752" .
+
+<http://www.example.org/record/MedianEarning/Offaly/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Offaly" ;
+        <http://schema.org/median>
+                "35875" .
+
+<http://www.example.org/record/MedianEarning/Wicklow/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Wicklow" ;
+        <http://schema.org/median>
+                "42004" .
+
+<http://www.example.org/record/MedianEarning/Sligo/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Sligo" ;
+        <http://schema.org/median>
+                "39466" .
+
+<http://www.example.org/record/MedianEarning/Cork/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Cork" ;
+        <http://schema.org/median>
+                "41393" .
+
+<http://www.example.org/record/MedianEarning/Leitrim/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Leitrim" ;
+        <http://schema.org/median>
+                "34768" .
+
+<http://www.example.org/record/MedianEarning/Cavan/2012>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2012" ;
+        <http://dbpedia.org/ontology/county>
+                "Cavan" ;
+        <http://schema.org/median>
+                "34363" .
+
+<http://www.example.org/record/MedianEarning/Longford/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Longford" ;
+        <http://schema.org/median>
+                "35206" .
+
+<http://www.example.org/record/MedianEarning/Carlow/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Carlow" ;
+        <http://schema.org/median>
+                "37589" .
+
+<http://www.example.org/record/MedianEarning/Monaghan/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Monaghan" ;
+        <http://schema.org/median>
+                "32718" .
+
+<http://www.example.org/record/MedianEarning/Waterford/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Waterford" ;
+        <http://schema.org/median>
+                "37404" .
+
+<http://www.example.org/record/MedianEarning/Louth/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Louth" ;
+        <http://schema.org/median>
+                "37397" .
+
+<http://www.example.org/record/MedianEarning/Wexford/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Wexford" ;
+        <http://schema.org/median>
+                "36617" .
+
+<http://www.example.org/record/MedianEarning/Kerry/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Kerry" ;
+        <http://schema.org/median>
+                "34657" .
+
+<http://www.example.org/record/MedianEarning/Westmeath/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Westmeath" ;
+        <http://schema.org/median>
+                "38245" .
+
+<http://www.example.org/record/MedianEarning/Mayo/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Mayo" ;
+        <http://schema.org/median>
+                "34522" .
+
+<http://www.example.org/record/MedianEarning/Galway/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Galway" ;
+        <http://schema.org/median>
+                "39469" .
+
+<http://www.example.org/record/MedianEarning/Kildare/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Kildare" ;
+        <http://schema.org/median>
+                "42137" .
+
+<http://www.example.org/record/MedianEarning/Kilkenny/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Kilkenny" ;
+        <http://schema.org/median>
+                "37756" .
+
+<http://www.example.org/record/MedianEarning/Clare/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Clare" ;
+        <http://schema.org/median>
+                "38843" .
+
+<http://www.example.org/record/MedianEarning/Donegal/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Donegal" ;
+        <http://schema.org/median>
+                "32557" .
+
+<http://www.example.org/record/MedianEarning/Limerick/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Limerick" ;
+        <http://schema.org/median>
+                "42223" .
+
+<http://www.example.org/record/MedianEarning/Meath/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Meath" ;
+        <http://schema.org/median>
+                "45204" .
+
+<http://www.example.org/record/MedianEarning/Dublin/2015>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2015" ;
+        <http://dbpedia.org/ontology/county>
+                "Dublin" ;
+        <http://schema.org/median>
+                "46268" .
+
+<http://www.example.org/record/MedianEarning/Sligo/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Sligo" ;
+        <http://schema.org/median>
+                "37044" .
+
+<http://www.example.org/record/MedianEarning/Tipperary/2018>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2018" ;
+        <http://dbpedia.org/ontology/county>
+                "Tipperary" ;
+        <http://schema.org/median>
+                "38625" .
+
+<http://www.example.org/record/MedianEarning/Cork/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Cork" ;
+        <http://schema.org/median>
+                "39254" .
+
+<http://www.example.org/record/MedianEarning/Laois/2016>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2016" ;
+        <http://dbpedia.org/ontology/county>
+                "Laois" ;
+        <http://schema.org/median>
+                "38075" .
+
+<http://www.example.org/record/MedianEarning/Carlow/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Carlow" ;
+        <http://schema.org/median>
+                "35227" .
+
+<http://www.example.org/record/MedianEarning/Roscommon/2014>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2014" ;
+        <http://dbpedia.org/ontology/county>
+                "Roscommon" ;
+        <http://schema.org/median>
+                "36338" .
+
+<http://www.example.org/record/MedianEarning/Louth/2011>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2011" ;
+        <http://dbpedia.org/ontology/county>
+                "Louth" ;
+        <http://schema.org/median>
+                "36288" .
+
+<http://www.example.org/record/MedianEarning/Wexford/2013>
+        a       <http://example.org/csv/MedianEarningRecord> ;
+        <http://dbpedia.org/ontology/censusYear>
+                "2013" ;
+        <http://dbpedia.org/ontology/county>
+                "Wexford" ;
+        <http://schema.org/median>
+                "33920" .
