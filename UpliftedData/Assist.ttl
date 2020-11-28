@@ -1,0 +1,7 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dbpediaa: <http://dbpedia.org/ontology#>.
+@prefix dbpediab: <http://dbpedia.org/ontology/>.
+
+dbpediaa:county owl:sameAs dbpediab:county .
+
+dbpediaa:censusYear owl:sameAs dbpediab:censusYear .
