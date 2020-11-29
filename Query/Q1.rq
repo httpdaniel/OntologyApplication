@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select * where {
+    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+    ?s <http://dbpedia.org/ontology/county> ?c .
+    ?s <http://dbpedia.org/ontology/average> ?mean .
+    
+    ?beachelordegree <http://dbpedia.org/ontology/county> ?c .
+    ?beachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
+    ?beachelordegree <http://purl.org/dc/terms#educationLevel> "Ordinary bachelor degree/professional qualification or both" .
+    ?beachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
+    ?beachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?beachelordegree_value
+}
+ORDER BY DESC(?beachelordegree_value)
+limit 10
+
