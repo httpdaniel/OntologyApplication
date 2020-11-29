@@ -12,4 +12,3 @@ select * where {
 }
 ORDER BY ASC(?mean)
 limit 10000
-

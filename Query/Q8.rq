@@ -1,0 +1,24 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {
+    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+    ?s <http://dbpedia.org/ontology/county> ?c .
+    ?s <http://dbpedia.org/ontology/average> ?mean .
+    
+    ?beachelordegree <http://dbpedia.org/ontology/county> ?c .
+    ?beachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
+    
+    ?beachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
+            
+    FILTER (
+            ?degree in ("Postgraduate diploma or degree","Doctorate (Ph.D.)")
+    )
+    
+    ?beachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
+    ?beachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value
+}
+GROUP BY ?c ?mean
+ORDER BY DESC(?degree_sum)
+limit 10
+
