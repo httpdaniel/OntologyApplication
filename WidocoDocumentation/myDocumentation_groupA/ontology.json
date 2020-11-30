@@ -1,0 +1,552 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Carlow"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Cavan"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Clare"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Cork"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Donegal"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Dublin"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Dun_LaoghaireRathdown"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Fingal"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Galway"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Kerry"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Kildare"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Kilkenny"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#LaoghaireRathdown"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Laois"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Leitrim"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Limerick"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Longford"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Louth"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Mayo"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Meath"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Monaghan"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Offaly"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Roscommon"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Sligo"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#South_Dublin"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#State"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Tipperary"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Waterford"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Westmeath"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Wexford"
+    }, {
+      "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Wicklow"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#AgeEducationEnded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Data_Point"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Average_Years_Of_Education",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Education"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Bachelor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Tertiary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Carlow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Cavan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Clare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Cork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Data_Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#DetailedSecondaryEducation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Data_Point"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Doctor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Tertiary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Donegal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Dublin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Dun_LaoghaireRathdown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Earning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#EarningData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Data_Point"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Education",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#EducationalLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Education"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Category"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Fingal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Frequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Galway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Highest_Education",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Data_Point"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Kerry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Kildare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Kilkenny",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#LaoghaireRathdown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Laois",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Leitrim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Limerick",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Longford",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Louth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Lower_Secondary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Secondary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Master",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Tertiary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Mayo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Mean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#MeanEarningData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#EarningData"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#MedianEarningData"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Mean_Earning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Earning"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Meath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Median",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#MedianEarningData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#EarningData"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Median_Earning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Earning"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Monaghan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#NoFormalEducation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#EducationalLevel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Offaly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Primary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#EducationalLevel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Roscommon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Secondary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#EducationalLevel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Sligo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#South_Dublin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#State",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#SurveyType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Surveys"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Surveys",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Tertiary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#EducationalLevel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Tipperary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Upper_Secondary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Secondary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Waterford",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Westmeath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Wexford",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Wicklow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#censusYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Time"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#county",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Location"
+  } ]
+} ]
