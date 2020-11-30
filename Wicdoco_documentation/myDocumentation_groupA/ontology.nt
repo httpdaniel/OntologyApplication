@@ -1,0 +1,476 @@
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology of education and economic status in Ireland" .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl> <http://www.w3.org/2000/01/rdf-schema#label> "Education & Economic Status" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#attendedBy
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#attendedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#attendedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#wentTo> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#attendedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#attendedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEarningData
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEarningData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEarningData> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEarningDataOf> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEarningData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEarningData> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEducationLevel
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEducationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEducationLevel> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEducationLevelOf> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEducationLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEducationLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasNeighbourCounty
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasNeighbourCounty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasNeighbourCounty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasNeighbourCounty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasNeighbourCounty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasSchool
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasSchool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasSchool> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#schoolIn> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasSchool> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasSchool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEarningDataOf
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEarningDataOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEarningDataOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEarningDataOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEducationLevelOf
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEducationLevelOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEducationLevelOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEducationLevelOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#schoolIn
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#schoolIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#schoolIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#schoolIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#wentTo
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#wentTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#wentTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#wentTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Age
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Age> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#AgeEducationCeased
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#AgeEducationCeased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#AgeEducationCeased> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#AgeEducationCeased> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CityName
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CityName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CityName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CountyName
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CountyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CountyName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CountyName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Bachelor> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#HigherCertificate> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#LowerSecondary> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NoEducation> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#PhD> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Primary> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#UpperSecondary> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Gender
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Mean
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Mean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Mean> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MeanEarning> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Mean> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Median
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Median> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Median> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MedianEarning> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Median> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NumPupils
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NumPupils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NumPupils> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Community> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NumPupils> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Comprehensive> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NumPupils> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Secondary> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NumPupils> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Vocational> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NumPupils> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Population
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Population> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Population> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Bachelor
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Bachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Bachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1000"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Community
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Community> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Community> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Comprehensive
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Comprehensive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Comprehensive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEarningData> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasNeighbourCounty> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasSchool> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEarningDataOf> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEducationLevelOf> .
+_:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1000"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#HigherCertificate
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#HigherCertificate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#HigherCertificate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#LowerSecondary
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#LowerSecondary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#LowerSecondary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MeanEarning
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MeanEarning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MeanEarning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MedianEarning
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MedianEarning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MedianEarning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NoEducation
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NoEducation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NoEducation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEducationLevel> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#wentTo> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#PhD
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#PhD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#PhD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Primary
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Primary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Primary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#attendedBy> .
+_:genid13 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "50"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Secondary
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Secondary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Secondary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#UpperSecondary
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#UpperSecondary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#UpperSecondary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Vocational
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Vocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Vocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Antrim
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Antrim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Antrim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Armagh
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Armagh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Armagh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Carlow
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Carlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Carlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Cavan
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Cavan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Cavan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Clare
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Clare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Clare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Cork
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Cork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Cork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CorkCity
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CorkCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CorkCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Derry
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Derry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Derry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dingle
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dingle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dingle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Donegal
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Donegal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Donegal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Down
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Down> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Down> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dublin
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dublin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dublin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DublinCity
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DublinCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DublinCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dun-Laoghaire
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dun-Laoghaire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dun-Laoghaire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Fermanagh
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Fermanagh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Fermanagh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Fingal
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Fingal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Fingal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Galway
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Galway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Galway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#GalwayCity
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#GalwayCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#GalwayCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kerry
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kerry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kerry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kildare
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kildare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kildare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kilkenny
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kilkenny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kilkenny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Laois
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Laois> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Laois> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Leitrim
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Leitrim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Leitrim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Limerick
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Limerick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Limerick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#LimerickCity
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#LimerickCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#LimerickCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Longford
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Longford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Longford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Louth
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Louth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Louth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Mayo
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Mayo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Mayo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Meath
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Meath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Meath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Monaghan
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Monaghan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Monaghan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Offaly
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Offaly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Offaly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Roscommon
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Roscommon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Roscommon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Sligo
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Sligo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Sligo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Tipperary
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Tipperary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Tipperary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Tyrone
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Tyrone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Tyrone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Waterford
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Waterford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Waterford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#WaterfordCity
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#WaterfordCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#WaterfordCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Westmeath
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Westmeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Westmeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Wexford
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Wexford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Wexford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Wicklow
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Wicklow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Wicklow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid14 <http://www.w3.org/2002/07/owl#members> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

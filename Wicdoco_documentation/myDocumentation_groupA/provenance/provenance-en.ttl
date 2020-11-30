@@ -1,0 +1,26 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "Education and Economic Status ";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2>;
+	 prov:wasGeneratedAt "30/11/2020";
+.
+:agent0 a prov:Agent; foaf:name "Daniel Farrell".
+:agent1 a prov:Agent; foaf:name "Sachin Arvind Gade".
+:agent2 a prov:Agent; foaf:name "Min Wu".
+:agent3 a prov:Agent; foaf:name "Xiaokang Wang".
+:agent4 a prov:Agent; foaf:name "Daniel Farrell".
+:agent5 a prov:Agent; foaf:name "Sachin Arvind Gade".
+:agent6 a prov:Agent; foaf:name "Min Wu".
+:agent7 a prov:Agent; foaf:name "Xiaokang Wang ".
