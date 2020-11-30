@@ -21,11 +21,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#FromSameSurvey -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#FromSameSurvey">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#FromSameSurvey"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#FromSameSurveyAndSameYear -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#FromSameSurveyAndSameYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#FromSameSurvey"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#FromSameSurveyAndSameYear"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#SurveyType -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#SurveyType">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Surveys"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     </owl:ObjectProperty>
     
 
@@ -34,6 +55,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shelikhoo/ontologies/2020/10/untitled-ontology-2#Surveys">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     </owl:ObjectProperty>
     
 
