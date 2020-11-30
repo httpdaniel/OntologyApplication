@@ -5,12 +5,12 @@ select * where {
     ?s <http://dbpedia.org/ontology/county> ?c .
     ?s <http://dbpedia.org/ontology/average> ?mean .
     
-    ?beachelordegree <http://dbpedia.org/ontology/county> ?c .
-    ?beachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?beachelordegree <http://purl.org/dc/terms#educationLevel> "Ordinary bachelor degree/professional qualification or both" .
-    ?beachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
-    ?beachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?beachelordegree_value
+    ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
+    ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
+    ?bachelordegree <http://purl.org/dc/terms#educationLevel> "Ordinary bachelor degree/professional qualification or both" .
+    ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
+    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?bachelordegree_value
 }
-ORDER BY DESC(?beachelordegree_value)
+ORDER BY DESC(?bachelordegree_value)
 limit 10
 
