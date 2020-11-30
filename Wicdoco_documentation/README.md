@@ -1,3 +1,5 @@
+Download all and open ../myDocumentation_groupA/index-en.html
+
 For the OWL visualization should install the envrionment first, see :
 
 Browser issues (Why can’t I see the generated documentation / visualization?)
