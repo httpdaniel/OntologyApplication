@@ -6,15 +6,15 @@ select  ?c ?mean  (SUM(xsd:integer(?nodegreesum))/SUM(xsd:integer(?degree_value)
     ?s <http://dbpedia.org/ontology/county> ?c .
     ?s <http://dbpedia.org/ontology/average> ?mean .
     
-    ?beachelordegree <http://dbpedia.org/ontology/county> ?c .
-    ?beachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
+    ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
+    ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
     
-    ?beachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
+    ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
     
     BIND ( IF(?degree in ("Doctorate (Ph.D.)"), ?degree_value, 0 ) as ?nodegreesum )
     
-    ?beachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
-    ?beachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value
+    ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
+    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value
 }
 GROUP BY ?c ?mean
 ORDER BY DESC(?nodegree_perc)
