@@ -1,0 +1,56 @@
+# Mapping created using Juma editor.
+  @prefix rr: <http://www.w3.org/ns/r2rml#> .
+  @prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix disco: <http://rdf-vocabulary.ddialliance.org/discovery#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix sur: <https://w3id.org/survey-ontology#> .
+    @prefix dbo: <http://dbpedia.org/ontology#> .
+
+  <#TriplesMapTriplesMapEA033>
+  rr:logicalTable [
+    rr:tableName "EA033";
+  ];
+
+   rr:subjectMap [
+      rr:template "http://www.example.org/EA033Record/{ID}";
+      rr:class sur:Survey;
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant dbo:county;
+    ];
+
+     rr:objectMap [
+      rr:column "COUNTY_AND_CITY";
+     ];
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant dbo:censusYear;
+    ];
+
+     rr:objectMap [
+      rr:column "CENSUSYEAR";
+     ];
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant disco:statisticsCategory;
+    ];
+
+     rr:objectMap [
+      rr:column "STATISTIC";
+     ];
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant disco:frequency;
+    ];
+
+     rr:objectMap [
+      rr:column "VALUE";
+     ];
+  ];
+  .
