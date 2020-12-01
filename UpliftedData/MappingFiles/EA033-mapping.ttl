@@ -1,4 +1,6 @@
-# Mapping created using Juma editor.
+# Mapping for Average Age Education Ceased of Population Aged 15 Years and Over 2011 to 2016 by County and City, CensusYear and Statistic
+# https://statbank.cso.ie/px/pxeirestat/Statire/SelectVarVal/Define.asp?maintable=EA033&PLanguage=0
+# Uplifted data can be identified by the statisticsCategory field
   @prefix rr: <http://www.w3.org/ns/r2rml#> .
   @prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#> .
     @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
