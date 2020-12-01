@@ -1,4 +1,5 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 select (?c as ?countyName) (?mean as ?meanEarning) (?bachelordegree_value as ?numberOfBachelorDegreeHolder) where {
     ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
     ?s <http://dbpedia.org/ontology/censusYear> "2018" .
