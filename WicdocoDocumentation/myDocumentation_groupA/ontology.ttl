@@ -1,0 +1,532 @@
+@prefix : <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl> .
+
+<http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl> rdf:type owl:Ontology ;
+                                                                     rdfs:comment "Ontology of education and economic status in Ireland" ;
+                                                                     rdfs:label "Education & Economic Status" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#attendedBy
+:attendedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :wentTo ;
+            rdfs:domain :School ;
+            rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEarningData
+:hasEarningData rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isEarningDataOf ;
+                rdfs:domain :County ;
+                rdfs:range :Earning .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasEducationLevel
+:hasEducationLevel rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isEducationLevelOf ;
+                   rdfs:domain :Person ;
+                   rdfs:range :EducationLevel .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasNeighbourCounty
+:hasNeighbourCounty rdf:type owl:ObjectProperty ,
+                             owl:SymmetricProperty ;
+                    rdfs:domain :County ;
+                    rdfs:range :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#hasSchool
+:hasSchool rdf:type owl:ObjectProperty ;
+           owl:inverseOf :schoolIn ;
+           rdfs:domain :County ;
+           rdfs:range :School .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEarningDataOf
+:isEarningDataOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Earning ;
+                 rdfs:range :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#isEducationLevelOf
+:isEducationLevelOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :EducationLevel ;
+                    rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           owl:inverseOf :locationOf ;
+           rdf:type owl:TransitiveProperty ;
+           rdfs:domain :City ,
+                       :Person ;
+           rdfs:range :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#locationOf
+:locationOf rdf:type owl:ObjectProperty ,
+                     owl:TransitiveProperty ;
+            rdfs:domain :County ;
+            rdfs:range :City ,
+                       :Person .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#schoolIn
+:schoolIn rdf:type owl:ObjectProperty ;
+          rdfs:domain :School ;
+          rdfs:range :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#wentTo
+:wentTo rdf:type owl:ObjectProperty ;
+        rdfs:domain :Person ;
+        rdfs:range :School .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Age
+:Age rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Person ;
+     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#AgeEducationCeased
+:AgeEducationCeased rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Person ;
+                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CityName
+:CityName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :City ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CountyName
+:CountyName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :County ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DegreeTitle
+:DegreeTitle rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Bachelor ,
+                         :HigherCertificate ,
+                         :LowerSecondary ,
+                         :NoEducation ,
+                         :PhD ,
+                         :Primary ,
+                         :UpperSecondary ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Gender
+:Gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Person ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Mean
+:Mean rdf:type owl:DatatypeProperty ;
+      rdfs:domain :MeanEarning ;
+      rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Median
+:Median rdf:type owl:DatatypeProperty ;
+        rdfs:domain :MedianEarning ;
+        rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NumPupils
+:NumPupils rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Community ,
+                       :Comprehensive ,
+                       :Secondary ,
+                       :Vocational ;
+           rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Population
+:Population rdf:type owl:DatatypeProperty ;
+            rdfs:domain :County ;
+            rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Bachelor
+:Bachelor rdf:type owl:Class ;
+          rdfs:subClassOf :EducationLevel .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :locatedIn ;
+                        owl:someValuesFrom :County
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :locationOf ;
+                        owl:minQualifiedCardinality "1000"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Person
+                      ] .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Community
+:Community rdf:type owl:Class ;
+           rdfs:subClassOf :School .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Comprehensive
+:Comprehensive rdf:type owl:Class ;
+               rdfs:subClassOf :School .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#County
+:County rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasEarningData ;
+                          owl:someValuesFrom :Earning
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNeighbourCounty ;
+                          owl:someValuesFrom :County
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasSchool ;
+                          owl:someValuesFrom :School
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :locationOf ;
+                          owl:someValuesFrom :City
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :locationOf ;
+                          owl:someValuesFrom :Person
+                        ] .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Earning
+:Earning rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :isEarningDataOf ;
+                           owl:someValuesFrom :County
+                         ] .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#EducationLevel
+:EducationLevel rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isEducationLevelOf ;
+                                  owl:minQualifiedCardinality "1000"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :Person
+                                ] .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#HigherCertificate
+:HigherCertificate rdf:type owl:Class ;
+                   rdfs:subClassOf :EducationLevel .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#LowerSecondary
+:LowerSecondary rdf:type owl:Class ;
+                rdfs:subClassOf :EducationLevel .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MeanEarning
+:MeanEarning rdf:type owl:Class ;
+             rdfs:subClassOf :Earning .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#MedianEarning
+:MedianEarning rdf:type owl:Class ;
+               rdfs:subClassOf :Earning .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#NoEducation
+:NoEducation rdf:type owl:Class ;
+             rdfs:subClassOf :EducationLevel .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasEducationLevel ;
+                          owl:someValuesFrom :EducationLevel
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :locatedIn ;
+                          owl:someValuesFrom :County
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :wentTo ;
+                          owl:someValuesFrom :School
+                        ] .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#PhD
+:PhD rdf:type owl:Class ;
+     rdfs:subClassOf :EducationLevel .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Primary
+:Primary rdf:type owl:Class ;
+         rdfs:subClassOf :EducationLevel .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#School
+:School rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :attendedBy ;
+                          owl:minQualifiedCardinality "50"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Person
+                        ] .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Secondary
+:Secondary rdf:type owl:Class ;
+           rdfs:subClassOf :School .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#UpperSecondary
+:UpperSecondary rdf:type owl:Class ;
+                rdfs:subClassOf :EducationLevel .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Vocational
+:Vocational rdf:type owl:Class ;
+            rdfs:subClassOf :School .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Antrim
+:Antrim rdf:type owl:NamedIndividual ,
+                 :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Armagh
+:Armagh rdf:type owl:NamedIndividual ,
+                 :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Carlow
+:Carlow rdf:type owl:NamedIndividual ,
+                 :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Cavan
+:Cavan rdf:type owl:NamedIndividual ,
+                :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Clare
+:Clare rdf:type owl:NamedIndividual ,
+                :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Cork
+:Cork rdf:type owl:NamedIndividual ,
+               :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#CorkCity
+:CorkCity rdf:type owl:NamedIndividual ,
+                   :City .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Derry
+:Derry rdf:type owl:NamedIndividual ,
+                :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dingle
+:Dingle rdf:type owl:NamedIndividual ,
+                 :City .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Donegal
+:Donegal rdf:type owl:NamedIndividual ,
+                  :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Down
+:Down rdf:type owl:NamedIndividual ,
+               :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dublin
+:Dublin rdf:type owl:NamedIndividual ,
+                 :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#DublinCity
+:DublinCity rdf:type owl:NamedIndividual ,
+                     :City .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Dun-Laoghaire
+:Dun-Laoghaire rdf:type owl:NamedIndividual ,
+                        :City .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Fermanagh
+:Fermanagh rdf:type owl:NamedIndividual ,
+                    :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Fingal
+:Fingal rdf:type owl:NamedIndividual ,
+                 :City .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Galway
+:Galway rdf:type owl:NamedIndividual ,
+                 :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#GalwayCity
+:GalwayCity rdf:type owl:NamedIndividual ,
+                     :City .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kerry
+:Kerry rdf:type owl:NamedIndividual ,
+                :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kildare
+:Kildare rdf:type owl:NamedIndividual ,
+                  :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Kilkenny
+:Kilkenny rdf:type owl:NamedIndividual ,
+                   :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Laois
+:Laois rdf:type owl:NamedIndividual ,
+                :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Leitrim
+:Leitrim rdf:type owl:NamedIndividual ,
+                  :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Limerick
+:Limerick rdf:type owl:NamedIndividual ,
+                   :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#LimerickCity
+:LimerickCity rdf:type owl:NamedIndividual ,
+                       :City .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Longford
+:Longford rdf:type owl:NamedIndividual ,
+                   :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Louth
+:Louth rdf:type owl:NamedIndividual ,
+                :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Mayo
+:Mayo rdf:type owl:NamedIndividual ,
+               :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Meath
+:Meath rdf:type owl:NamedIndividual ,
+                :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Monaghan
+:Monaghan rdf:type owl:NamedIndividual ,
+                   :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Offaly
+:Offaly rdf:type owl:NamedIndividual ,
+                 :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Roscommon
+:Roscommon rdf:type owl:NamedIndividual ,
+                    :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Sligo
+:Sligo rdf:type owl:NamedIndividual ,
+                :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Tipperary
+:Tipperary rdf:type owl:NamedIndividual ,
+                    :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Tyrone
+:Tyrone rdf:type owl:NamedIndividual ,
+                 :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Waterford
+:Waterford rdf:type owl:NamedIndividual ,
+                    :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#WaterfordCity
+:WaterfordCity rdf:type owl:NamedIndividual ,
+                        :City .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Westmeath
+:Westmeath rdf:type owl:NamedIndividual ,
+                    :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Wexford
+:Wexford rdf:type owl:NamedIndividual ,
+                  :County .
+
+
+###  http://www.semanticweb.org/skeleton/ontologies/2020/10/groupA.owl#Wicklow
+:Wicklow rdf:type owl:NamedIndividual ,
+                  :County .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :County
+                :Earning
+                :EducationLevel
+                :Person
+                :School
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
