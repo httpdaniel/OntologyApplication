@@ -1,10 +1,21 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select  ?c ?mean  (SUM(xsd:integer(?nodegreesum))/SUM(xsd:integer(?degree_value)) as ?nodegree_perc) where {
+select  ?c ?mean  (SUM(xsd:integer(?nodegreesum))/SUM(xsd:integer(?degree_value)) as ?nodegree_perc) ?secSchoolValue ?averageEduEndValue where {
     ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
     ?s <http://dbpedia.org/ontology/censusYear> "2018" .
     ?s <http://dbpedia.org/ontology/county> ?c .
     ?s <http://dbpedia.org/ontology/average> ?mean .
+    
+    ?secSchool <http://dbpedia.org/ontology/county> ?c .
+    ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
+    ?secSchool <http://www.w3.org/2000/01/rdf-schema#label> "Secondary schools" .
+    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Schools providing Second Level Education  (Number)" .
+    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?secSchoolValue .
+    
+    ?averageEduEnd <http://dbpedia.org/ontology/county> ?c .
+    ?averageEduEnd <http://dbpedia.org/ontology#censusYear> "2016" .
+    ?averageEduEnd <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)" .
+    ?averageEduEnd <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?averageEduEndValue .
     
     ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
     ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
@@ -14,9 +25,10 @@ select  ?c ?mean  (SUM(xsd:integer(?nodegreesum))/SUM(xsd:integer(?degree_value)
     BIND ( IF(?degree in ("Doctorate (Ph.D.)"), ?degree_value, 0 ) as ?nodegreesum )
     
     ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
-    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value
+    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value .
+   
+    
 }
-GROUP BY ?c ?mean
+GROUP BY ?c ?mean ?secSchoolValue ?averageEduEndValue
 ORDER BY DESC(?nodegree_perc)
 limit 10
-
