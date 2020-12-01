@@ -11,6 +11,6 @@ select * where {
     ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
     ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?bachelordegree_value
 }
-ORDER BY DESC(?bachelordegree_value)
+ORDER BY DESC(xsd:integer(?bachelordegree_value))
 limit 10
 

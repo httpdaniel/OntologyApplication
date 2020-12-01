@@ -10,6 +10,6 @@ select * where {
     ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
     ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
 }
-ORDER BY DESC(?ageeduceased_value)
+ORDER BY DESC(xsd:integer(?ageeduceased_value))
 limit 10000
 

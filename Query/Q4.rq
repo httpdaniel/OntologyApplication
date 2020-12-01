@@ -1,15 +1,18 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 select * where {
     ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2011" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
+    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+	?s <http://dbpedia.org/ontology/county> ?c .
     ?s <http://dbpedia.org/ontology/average> ?mean .
     
-    ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
-    ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2011" .
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
+    ?secSchool <http://dbpedia.org/ontology/county> ?c .
+    ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
+    ?secSchool <http://www.w3.org/2000/01/rdf-schema#label> "Secondary schools" .
+    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Schools providing Second Level Education  (Number)" .
+    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?secSchoolValue
+    #Filter (?secSchoolValue !=  "n/a")
 }
-ORDER BY DESC(?ageeduceased_value)
-limit 10000
+ORDER BY ASC(xsd:integer(?secSchoolValue))
+limit 12
 
