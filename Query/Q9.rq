@@ -1,6 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select  ?c ?mean  (SUM(xsd:integer(?nodegreesum))/SUM(xsd:integer(?degree_value)) as ?nodegree_perc) ?secSchoolValue ?averageEduEndValue where {
+select  (?c as ?countyName) (?mean as ?meanEarning)  (SUM(xsd:integer(?degreesum))/SUM(xsd:integer(?degree_value)) as ?degree_perc)  (?secSchoolValue as ?numberOfSecondarySchool) (?averageEduEndValue as ?ageEduCeased) where {
     ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
     ?s <http://dbpedia.org/ontology/censusYear> "2018" .
     ?s <http://dbpedia.org/ontology/county> ?c .
@@ -22,10 +22,11 @@ select  ?c ?mean  (SUM(xsd:integer(?nodegreesum))/SUM(xsd:integer(?degree_value)
     
     ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
     
-    BIND ( IF(?degree in ("Doctorate (Ph.D.)"), ?degree_value, 0 ) as ?nodegreesum )
+    BIND ( IF(?degree in ("Doctorate (Ph.D.)"), ?degree_value, 0 ) as ?degreesum )
     
     ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
     ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value .
+    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
    
     
 }

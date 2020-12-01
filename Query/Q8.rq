@@ -1,6 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {
+select  (?c as ?countyName) (?mean as ?meanEarning)  (SUM(xsd:integer(?degree_value)) as ?numberOfPostDegreeHolder) where {
     ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
     ?s <http://dbpedia.org/ontology/censusYear> "2018" .
     ?s <http://dbpedia.org/ontology/county> ?c .
@@ -10,6 +10,7 @@ select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {
     ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
     
     ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
+    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
             
     FILTER (
             ?degree in ("Postgraduate diploma or degree","Doctorate (Ph.D.)")
@@ -19,6 +20,6 @@ select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {
     ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value
 }
 GROUP BY ?c ?mean
-ORDER BY DESC(?degree_sum)
+ORDER BY DESC(?numberOfPostDegreeHolder)
 limit 10
 

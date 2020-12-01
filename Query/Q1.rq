@@ -1,5 +1,5 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select * where {
+select (?c as ?countyName) (?mean as ?meanEarning) (?bachelordegree_value as ?numberOfBachelorDegreeHolder) where {
     ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
     ?s <http://dbpedia.org/ontology/censusYear> "2018" .
     ?s <http://dbpedia.org/ontology/county> ?c .
@@ -13,4 +13,6 @@ select * where {
 }
 ORDER BY DESC(xsd:integer(?bachelordegree_value))
 limit 10
-
+# This query will combine the dataset from mean earning and education level.  
+# For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe. 
+# Number of Bachelor degree and its associated county will be listed, and the mean earning of each county listed will be retrived.

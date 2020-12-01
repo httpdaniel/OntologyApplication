@@ -1,5 +1,9 @@
+# This query will combine the dataset from mean earning and education level.  
+# For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe. 
+# The eligible record for education level will be calculated before its related county will be matched against earning record. 
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select * where {
+select (?c as ?countyName) (?mean as ?meanEarning) (?ageeduceased_value as ?ageEduCeased) where {
     ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
     ?s <http://dbpedia.org/ontology/censusYear> "2018" .
     ?s <http://dbpedia.org/ontology/county> ?c .

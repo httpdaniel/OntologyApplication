@@ -1,10 +1,10 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
+select  (?c as ?countyName) (?ageeduceased_value as ?ageEduCeased)  (SUM(xsd:integer(?degree_value)) as ?degreeHolder_sum) where {
+    ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
+    ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
+    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
+    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value .
     
     ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
     ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
@@ -16,9 +16,10 @@ select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {
     )
     
     ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
-    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value
+    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value .
+    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
 }
-GROUP BY ?c ?mean
-ORDER BY DESC(?degree_sum)
+GROUP BY ?c ?mean ?ageeduceased_value
+ORDER BY ASC(?degreeHolder_sum)
 limit 10
 
