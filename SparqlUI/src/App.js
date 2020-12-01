@@ -1,51 +1,61 @@
-import React, { useState, useEffect } from 'react';
-import './styles/App.scss';
-import { Select, FormControl, MenuItem, Card, CardContent } from "@material-ui/core";
+import React from 'react';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
+
+import "./App.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import Q1 from "./Questions/Q1.component";
+import Q2 from "./Questions/Q2.component";
+import Q3 from "./Questions/Q3.component";
+import Q4 from "./Questions/Q4.component";
+import Q5 from "./Questions/Q5.component";
+import Q6 from "./Questions/Q6.component";
+import Q7 from "./Questions/Q7.component";
+import Q8 from "./Questions/Q8.component";
+import Q9 from "./Questions/Q9.component";
+import Q10 from "./Questions/Q10.component";
 
 function App() {
+    return (
+        <div className="App">
 
-  // selected query
-  const [query, setQuery] = useState("Test");
+            <Tabs defaultActiveKey="Question1" id="uncontrolled-tab-example">
 
-  // change query displayed in dropdown
-  const selectQuery = async(e) => {
-    const selectedQuery = e.target.value;
-    setQuery(selectedQuery);
-  }
+                <Tab eventKey="Question1" title="Question1">
+                    <Q1/>
+                </Tab>
+                <Tab eventKey="Question2" title="Question2">
+                    <Q2/>
+                </Tab>
+                <Tab eventKey="Question3" title="Question3">
+                    <Q3/>
+                </Tab>
+                <Tab eventKey="Questio4" title="Question4">
+                    <Q4/>
+                </Tab>
+                <Tab eventKey="Question5" title="Question5">
+                    <Q5/>
+                </Tab>
+                <Tab eventKey="Question6" title="Question6">
+                    <Q6/>
+                </Tab>
+                <Tab eventKey="Question7" title="Question7">
+                    <Q7/>
+                </Tab>
+                <Tab eventKey="Question8" title="Question8">
+                    <Q8/>
+                </Tab>
+                <Tab eventKey="Question9" title="Question9">
+                    <Q9/>
+                </Tab>
+                <Tab eventKey="Question10" title="Question10">
+                    <Q10/>
+                </Tab>
 
-  return (
-    <div className="app">
+            </Tabs>
 
-      <div className="app__header"></div>
-
-      <div className="app__body">
-        <Card className="query__container">
-          <CardContent>
-            <h3>Select Query: </h3>
-            <FormControl className="query__dropdown">
-              <Select variant="outlined" onChange={selectQuery} value={query}>
-                <MenuItem value="query1">
-                  query1
-                </MenuItem>
-                <MenuItem value="query2">
-                  query2
-                </MenuItem>
-                <MenuItem value="query3">
-                  query3
-                </MenuItem>
-              </Select>
-            </FormControl>
-            <Card className="query__result">
-              <CardContent>
-                <h3>Query Result:</h3>
-              </CardContent>
-            </Card>
-          </CardContent>
-        </Card>
-      </div>
-
-    </div>
-  )
+        </div>
+    );
 }
 
 export default App;
