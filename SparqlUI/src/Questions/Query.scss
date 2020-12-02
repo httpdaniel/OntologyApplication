@@ -1,0 +1,30 @@
+#buttons {
+  margin-bottom: 10px;
+}
+
+#btn {
+  margin: 10px;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+#container {
+  width: 1000px;
+}
+
+#card {
+  width: 1000px;
+  height: 241px;
+  display: flex;
+  flex-direction: column;
+}
+
+#query__row {
+  width: 1000px;
+}
+
+#response__row {
+  width: 1000px;
+}

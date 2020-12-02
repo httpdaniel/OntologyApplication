@@ -1,16 +1,16 @@
-
 import React from 'react';
-import Container from "react-bootstrap/Container";
+import Container from 'react-bootstrap/Container';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import fetchSparQL from "../fetch.service";
 import ResponseTableComponent from "../ResponseTable.Component";
 
 import Form from "react-bootstrap/Form";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import "./Query.scss"
 
 function Q9() {
 
@@ -60,12 +60,12 @@ function Q9() {
     }
 
     return(
-        <Container>
+        <Container id="container">
             <br/>
             <br/>
             <br/>
             <Row>
-                <Card>
+                <Card id="card">
                     <Col>
 
                         <CardContent>
@@ -73,28 +73,28 @@ function Q9() {
                                 Question 9
                             </Typography>
                             <Typography variant="body" color="textSecondary" component="h4">
-                                For the county with highest percentage of doctor degree holders, what is the mean earning, average age for ending education, and the number of secondary school
+                                For the county with highest percentage of PhD holders, what is the mean earning, average age for ending education, and the number of secondary schools
                             </Typography>
                             <Typography variant="body" color="textSecondary" component="p" align="right">
                                 Dataset used: All
                             </Typography>
                         </CardContent>
                     </Col>
-                    <Col>
-                        <Button color="primary" variant="outlined" onClick={() => getResultList()}>Execute Query</Button>
-                        <Button color="primary" variant="outlined" onClick={() => resetResultList()}>Reset Result</Button>
+                    <Col id="buttons">
+                        <Button id="btn" color="primary" class="btn btn-primary" variant="outlined" onClick={() => getResultList()}>Execute Query</Button>
+                        <Button id="btn" color="primary" class="btn btn-outline-primary" variant="outlined" onClick={() => resetResultList()}>Reset Result</Button>
                     </Col>
                 </Card>
 
             </Row>
             <br/>
             <br/>
-            <Row>
+            <Row id="query__row">
                 <Form.Control defaultValue={query} as="textarea" disabled={true}  rows="8" />
             </Row>
             <br/>
             <br/>
-            <Row>
+            <Row id="response__row">
                 <ResponseTableComponent response={response} />
             </Row>
             <br/>

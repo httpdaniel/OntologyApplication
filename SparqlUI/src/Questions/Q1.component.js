@@ -10,6 +10,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import "./Query.scss"
 
 function Q1() {
 
@@ -44,12 +45,12 @@ function Q1() {
     }
 
     return (
-        <Container>
+        <Container id="container">
             <br/>
             <br/>
             <br/>
             <Row>
-                <Card>
+                <Card id="card">
                 <Col>
 
                         <CardContent>
@@ -58,7 +59,7 @@ function Q1() {
                             </Typography>
                             <Typography variant="body" color="textSecondary" component="h4">
                                 Out of the county with the highest number of bachelor degrees,
-                                what is the mean earnings?
+                                what is the mean earning?
                             </Typography>
                             <Typography variant="body" color="textSecondary" component="p" align="right">
                                 Dataset used:
@@ -67,21 +68,20 @@ function Q1() {
                             </Typography>
                         </CardContent>
                 </Col>
-                <Col>
-                    <Button color="primary" variant="outlined" onClick={() => getResultList()}>Execute Query</Button>
-                    <Button color="primary" variant="outlined" onClick={() => resetResultList()}>Reset Result</Button>
+                <Col id="buttons">
+                    <Button id="btn" color="primary" class="btn btn-primary" variant="outlined" onClick={() => getResultList()}>Execute Query</Button>
+                    <Button id="btn" color="primary" class="btn btn-outline-primary" variant="outlined" onClick={() => resetResultList()}>Reset Result</Button>
                 </Col>
             </Card>
             </Row>
             <br/>
             <br/>
-            <Row>
-                <h6>SPARQL Query:</h6>
+            <Row id="query__row">
                 <Form.Control defaultValue={query} as="textarea" disabled={true} rows="8"/>
             </Row>
             <br/>
             <br/>
-            <Row>
+            <Row id="response__row">
                 <ResponseTableComponent response={response}/>
             </Row>
             <br/>
