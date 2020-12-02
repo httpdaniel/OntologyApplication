@@ -118,7 +118,8 @@ Are they directly correlated ? Does education = wealth ? Are there more external
             <pre class="query">
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-            select (?c as ?CountyName) (?mean as ?MeanEarning) (?bachelordegree_value as ?BachelorDegreeHolders) where {
+            select (?c as ?CountyName) (?mean as ?MeanEarning) (?bachelordegree_value as ?BachelorDegreeHolders)
+            where {
                 ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
                 ?s <http://dbpedia.org/ontology/censusYear> "2018" .
                 ?s <http://dbpedia.org/ontology/county> ?c .
@@ -132,9 +133,12 @@ Are they directly correlated ? Does education = wealth ? Are there more external
             }
             ORDER BY DESC(xsd:integer(?bachelordegree_value))
             limit 10
+    
             # This query will combine the dataset from mean earning and education level.  
-            # For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe. 
-            # Number of Bachelor degree and its associated county will be listed, and the mean earning of each county listed will be retrived.
+            # For both dataset the latest available data is displayed, even if they are 
+              not entirely in the same timeframe. 
+            # Number of Bachelor degree and its associated county will be listed, and the 
+              mean earning of each county listed will be retrived.
             </pre>
             <pre class="result">
             <table class="resultTab"><thead><th>BachelorDegreeHolders</th><th>CountyName</th><th>MeanEarning</th></thead>
@@ -149,7 +153,8 @@ Are they directly correlated ? Does education = wealth ? Are there more external
             <pre class="query">
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-            select  (?c as ?CountyName) (?ageeduceased_value as ?AgeEducationCeased)  (SUM(xsd:integer(?degree_value)) as ?DegreeHolders) where {
+            select  (?c as ?CountyName) (?ageeduceased_value as ?AgeEducationCeased)  
+            (SUM(xsd:integer(?degree_value)) as ?DegreeHolders) where {
                 ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
                 ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
                 ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
@@ -161,7 +166,9 @@ Are they directly correlated ? Does education = wealth ? Are there more external
                 ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
                         
                 FILTER (
-                        ?degree in ("Ordinary bachelor degree/professional qualification or both","Honours bachelor degree/professional qualification or both","Postgraduate diploma or degree","Doctorate (Ph.D.)")
+                        ?degree in ("Ordinary bachelor degree/professional qualification or both",
+                        "Honours bachelor degree/professional qualification or both",
+                        "Postgraduate diploma or degree","Doctorate (Ph.D.)")
                 )
                 
                 ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
@@ -184,8 +191,10 @@ Are they directly correlated ? Does education = wealth ? Are there more external
             <h3 id="topic">Q3. What county has the lowest earnings and what age on average does their education cease? (Merges dataset NEA08 & EA033)</h3>
             <pre class="query">
             # This query will combine the dataset from mean earning and education level.  
-            # For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe. 
-            # The eligible record for education level will be calculated before its related county will be matched against earning record. 
+            # For both dataset the latest available data is displayed, even if they are 
+              not entirely in the same timeframe. 
+            # The eligible record for education level will be calculated before its related 
+              county will be matched against earning record. 
             
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -216,7 +225,8 @@ Are they directly correlated ? Does education = wealth ? Are there more external
             <pre class="query">
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-            select (?c as ?CountyName) (?mean as ?MeanEarning) (?secSchoolValue as ?NumberOfSecondarySchools) where {
+            select (?c as ?CountyName) (?mean as ?MeanEarning) (?secSchoolValue as ?NumberOfSecondarySchools) 
+            where {
                 ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
                 ?s <http://dbpedia.org/ontology/censusYear> "2018" .
                 ?s <http://dbpedia.org/ontology/county> ?c .
@@ -245,7 +255,8 @@ Are they directly correlated ? Does education = wealth ? Are there more external
             <pre class="query">
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-            select (?c as ?CountyName) (?secSchoolValue as ?NumberOfSecondarySchools) (?bachelordegree_value as ?BachelorDegreeHolders) where {
+            select (?c as ?CountyName) (?secSchoolValue as ?NumberOfSecondarySchools) 
+            (?bachelordegree_value as ?BachelorDegreeHolders) where {
                
                 ?secSchool <http://dbpedia.org/ontology/county> ?c .
                 ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
@@ -331,7 +342,8 @@ Are they directly correlated ? Does education = wealth ? Are there more external
             <pre class="query">
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-            select  (?c as ?CountyName) (?mean as ?MeanEarning)  (SUM(xsd:integer(?degree_value)) as ?PostgraduateDegreeHolders) where {
+            select  (?c as ?CountyName) (?mean as ?MeanEarning)  
+            (SUM(xsd:integer(?degree_value)) as ?PostgraduateDegreeHolders) where {
                 ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
                 ?s <http://dbpedia.org/ontology/censusYear> "2018" .
                 ?s <http://dbpedia.org/ontology/county> ?c .
@@ -366,7 +378,9 @@ Are they directly correlated ? Does education = wealth ? Are there more external
             <pre class="query">
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-            select  (?c as ?CountyName) (?mean as ?MeanEarning)  (SUM(xsd:integer(?degreesum))/SUM(xsd:integer(?degree_value)) as ?PercentageOfPhDHolders)  (?secSchoolValue as ?NumberOfSecondarySchools) (?averageEduEndValue as ?AgeEducationCeased) where {
+            select  (?c as ?CountyName) (?mean as ?MeanEarning)  
+            (SUM(xsd:integer(?degreesum))/SUM(xsd:integer(?degree_value)) as ?PercentageOfPhDHolders)  
+            (?secSchoolValue as ?NumberOfSecondarySchools) (?averageEduEndValue as ?AgeEducationCeased) where {
                 ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
                 ?s <http://dbpedia.org/ontology/censusYear> "2018" .
                 ?s <http://dbpedia.org/ontology/county> ?c .
