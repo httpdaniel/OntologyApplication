@@ -4,7 +4,7 @@ An interactive ontology-driven application
 
 ## Introduction
 
-For this project we looked to find a correlation between education and economic status in Ireland, on a county level and individual level.
+For this project we looked to find a correlation between education and economic status in Ireland, on a county-by-county level and individual level.
 
 We first aggregated 4 open datasets, and they were as follows:
 
