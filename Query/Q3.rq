@@ -5,7 +5,7 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-select (?c as ?countyName) (?mean as ?meanEarning) (?ageeduceased_value as ?ageEduCeased) where {
+select (?c as ?CountyName) (?mean as ?MeanEarning) (?ageeduceased_value as ?AgeEducationCeased) where {
     ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
     ?s <http://dbpedia.org/ontology/censusYear> "2018" .
     ?s <http://dbpedia.org/ontology/county> ?c .
