@@ -31,5 +31,5 @@ select  (?c as ?CountyName) (?mean as ?MeanEarning)  (SUM(xsd:integer(?degreesum
     
 }
 GROUP BY ?c ?mean ?secSchoolValue ?averageEduEndValue
-ORDER BY DESC(?nodegree_perc)
+ORDER BY DESC(?PercentageOfPhDHolders)
 limit 10
