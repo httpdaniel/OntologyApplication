@@ -45,6 +45,26 @@ pre.query::before {
   margin: -1em 0 1em -1em;
 }
 
+pre.mapping {
+  border-top: 1px solid #ff4500;
+  border-bottom: 1px solid #ff4500;
+  padding: 1em;
+  margin-top: 1em;
+  width: 60%;
+}
+
+pre.mapping::before {
+  content: "Mapping";
+  display: block;
+  width: 150px;
+  background: #ff4500;
+  color: #fff;
+  font-family: initial;
+  padding: 3px;
+  font-weight: bold;
+  margin: -1em 0 1em -1em;
+}
+
 pre,
 code {
   font-family: monospace;
