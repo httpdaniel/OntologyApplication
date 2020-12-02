@@ -1,6 +1,8 @@
 # Mean and Median Annual Earnings by County, Sex, Year and Statistic
-# https://statbank.cso.ie/px/pxeirestat/Statire/SelectVarVal/Define.asp?maintable=NEA08&PLanguage=0
-# Uplifted data can be identified by the class = MeanEarningRecord
+# https://data.gov.ie/dataset/nea08-mean-and-median-annual-earnings-by-county-sex-year-and-statistic
+# Uplifted data can be identified by the year and county
+# Vocabulary sources can be seen as prefixes below.
+
   @prefix rr: <http://www.w3.org/ns/r2rml#> .
   @prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#> .
     @prefix csv: <http://example.org/csv/> .
