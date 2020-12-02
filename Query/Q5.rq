@@ -1,6 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select (?c as ?countyName) (?secSchoolValue as ?numberOfSecondarySchool) (?bachelordegree_value as ?numberOfBachelorDegreeHolder) where {
+select (?c as ?CountyName) (?secSchoolValue as ?NumberOfSecondarySchools) (?bachelordegree_value as ?BachelorDegreeHolders) where {
    
     ?secSchool <http://dbpedia.org/ontology/county> ?c .
     ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
