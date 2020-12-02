@@ -1,6 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select  (?c as ?countyName) (?ageeduceased_value as ?ageEduCeased)  (SUM(xsd:integer(?degree_value)) as ?degreeHolder_sum) where {
+select  (?c as ?CountyName) (?ageeduceased_value as ?AgeEducationCeased)  (SUM(xsd:integer(?degree_value)) as ?DegreeHolders) where {
     ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
     ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
     ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
