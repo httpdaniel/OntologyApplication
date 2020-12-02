@@ -1,6 +1,8 @@
 # Mapping for Second Level Schools and Pupils by County, Type of School, Year and Statistic 
-# https://statbank.cso.ie/px/pxeirestat/Statire/SelectVarVal/Define.asp?maintable=EDA69&PLanguage=0
-# Uplifted data can be identified by the statisticsCategory field
+# https://data.gov.ie/dataset/second-level-schools-and-pupils-by-year-county-type-of-school-and-statistic
+# Uplifted data can be identified by the ID field
+# Vocabulary sources can be seen as prefixes below.
+
   @prefix rr: <http://www.w3.org/ns/r2rml#> .
   @prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#> .
     @prefix ex: <http://example.org/> .
