@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Education and Economic Status </title>
+ <link rel="stylesheet" href="resources/queries.css"><link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Education and Economic Status </title>
 
 
 <!-- SCHEMA.ORG METADATA -->
@@ -112,459 +112,328 @@ Are they directly correlated ? Does education = wealth ? Are there more external
 
       <!--INTRODUCTION SECTION-->
       <div id="introduction3"><h2 id="intro3" class="list">Questions: <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-         <span class="markdown">
-Q1. Out of the county with the highest number of bachelor degrees, what is the mean earnings?<br/>
-Q2. What county has the lowest number of third level degrees and what age on average does their education cease?
-<br/>Q3. What county has the lowest earning and what age on average does their education cease?
-<br/>Q4. Does the county with highest number of ceased education earn most in 2011?
-<br/>Q5. Does the county with the lowest secondary school dropout rate earn the most money on average?
-<br/>Q6. Does the county with the lowest average age education ceased earn the least?
-<br/>Q7. Does the county with the highest average age for ceasing education earn the most?
-<br/>Q8. For the county with the most postgraduate degree holders, what was the mean earnings in 2018?
-<br/>Q9. For the county with the highest percentage of PHD degrees, what's the mean earning?
-<br/>Q10. In 2016, the county with the lowest mean earning, what age on average do they finish their education  ?
-<br/>
-          </span>
          <div id="acknowledgements1">
             <h2 id="ack1" class="list">SPARQL queries <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-
+            <h3 id="topic">Q1. Out of the county with the highest number of bachelor degrees, what is the mean earning of its population ?  (Merges dataset EZ073 & NEA08)</h3>
             <pre class="query">
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select * where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
-
-    ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
-    ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?bachelordegree <http://purl.org/dc/terms#educationLevel> "Ordinary bachelor degree/professional qualification or both" .
-    ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
-    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?bachelordegree_value
-}
-ORDER BY DESC(xsd:integer(?bachelordegree_value))
-limit 10
-# This query will combine the dataset from mean earning and education level.
-# For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe.
-# Number of Bachelor degree and its associated county will be listed, and the mean earning of each county listed will be retrived.
-</pre>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            select (?c as ?CountyName) (?mean as ?MeanEarning) (?bachelordegree_value as ?BachelorDegreeHolders) where {
+                ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+                ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+                ?s <http://dbpedia.org/ontology/county> ?c .
+                ?s <http://dbpedia.org/ontology/average> ?mean .
+                
+                ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
+                ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?bachelordegree <http://purl.org/dc/terms#educationLevel> "Ordinary bachelor degree/professional qualification or both" .
+                ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
+                ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?bachelordegree_value
+            }
+            ORDER BY DESC(xsd:integer(?bachelordegree_value))
+            limit 10
+            # This query will combine the dataset from mean earning and education level.  
+            # For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe. 
+            # Number of Bachelor degree and its associated county will be listed, and the mean earning of each county listed will be retrived.
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>bachelordegree</th><th>bachelordegree_value</th><th>c</th><th>mean</th><th>s</th></thead>
-<tbody><tr><td>http://www.example.org/EZ037Record/174</td><td>27047</td><td>Dublin</td><td>50801</td><td>http://www.example.org/record/MeanEarning/Dublin/2018</td></tr>
-<tr><td>http://www.example.org/EZ037Record/384</td><td>11576</td><td>Kildare</td><td>47044</td><td>http://www.example.org/record/MeanEarning/Kildare/2018</td></tr>
-<tr><td>http://www.example.org/EZ037Record/624</td><td>9770</td><td>Meath</td><td>45204</td><td>http://www.example.org/record/MeanEarning/Meath/2018</td></tr>
-<tr><td>http://www.example.org/EZ037Record/444</td><td>8113</td><td>Kerry</td><td>36966</td><td>http://www.example.org/record/MeanEarning/Kerry/2018</td></tr>
-<tr><td>http://www.example.org/EZ037Record/924</td><td>7846</td><td>Wicklow</td><td>45743</td><td>http://www.example.org/record/MeanEarning/Wicklow/2018</td></tr>
-<tr><td>http://www.example.org/EZ037Record/834</td><td>7073</td><td>Tipperary</td><td>38625</td><td>http://www.example.org/record/MeanEarning/Tipperary/2018</td></tr>
-<tr><td>http://www.example.org/EZ037Record/204</td><td>6699</td><td>Donegal</td><td>33776</td><td>http://www.example.org/record/MeanEarning/Donegal/2018</td></tr>
-<tr><td>http://www.example.org/EZ037Record/684</td><td>6341</td><td>Mayo</td><td>37703</td><td>http://www.example.org/record/MeanEarning/Mayo/2018</td></tr>
-<tr><td>http://www.example.org/EZ037Record/54</td><td>6322</td><td>Clare</td><td>42241</td><td>http://www.example.org/record/MeanEarning/Clare/2018</td></tr>
-<tr><td>http://www.example.org/EZ037Record/954</td><td>6214</td><td>Wexford</td><td>36617</td><td>http://www.example.org/record/MeanEarning/Wexford/2018</td></tr></tbody></table>
-</pre>
+            <table class="resultTab"><thead><th>BachelorDegreeHolders</th><th>CountyName</th><th>MeanEarning</th></thead>
+            <tbody>
+                <tr><td>27047</td><td>Dublin</td><td>50801</td></tr>
+            <tr><td>11576</td><td>Kildare</td><td>47044</td></tr>
+            <tr><td>9770</td><td>Meath</td><td>45204</td></tr>
+            <tr><td>8113</td><td>Kerry</td><td>36966</td></tr>
+        </tbody></table>
+            </pre>
+            <h3 id="topic">Q2. What county has the lowest number of third level degrees and what age on average does their education cease ? (Merges dataset EZ073 & EA033)</h3>
             <pre class="query">
-# This query will combine the dataset from mean earning and education level.
-# For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe.
-# The eligible record for education level will be calculated before its related county will be matched against earning record.
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
-
-    ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
-    ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
-
-    ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
-
-    FILTER (
-            ?degree in ("Ordinary bachelor degree/professional qualification or both","Honours bachelor degree/professional qualification or both","Postgraduate diploma or degree","Doctorate (Ph.D.)")
-    )
-
-    ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
-    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value .
-    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
-}
-GROUP BY ?c ?mean
-ORDER BY DESC(?degree_sum)
-limit 10
-
-</pre>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            select  (?c as ?CountyName) (?ageeduceased_value as ?AgeEducationCeased)  (SUM(xsd:integer(?degree_value)) as ?DegreeHolders) where {
+                ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
+                ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value .
+                
+                ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
+                ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
+                
+                ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
+                        
+                FILTER (
+                        ?degree in ("Ordinary bachelor degree/professional qualification or both","Honours bachelor degree/professional qualification or both","Postgraduate diploma or degree","Doctorate (Ph.D.)")
+                )
+                
+                ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
+                ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value .
+                ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
+            }
+            GROUP BY ?c ?mean ?ageeduceased_value
+            ORDER BY ASC(?degreeHolder_sum)
+            limit 10
+            
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>c</th><th>degree_sum</th><th>mean</th></thead>
-<tbody><tr><td>Dublin</td><td>136763</td><td>50801</td></tr>
-<tr><td>Kildare</td><td>42272</td><td>47044</td></tr>
-<tr><td>Meath</td><td>32089</td><td>45204</td></tr>
-<tr><td>Wicklow</td><td>27136</td><td>45743</td></tr>
-<tr><td>Cork</td><td>24352</td><td>44134</td></tr>
-<tr><td>Kerry</td><td>23541</td><td>36966</td></tr>
-<tr><td>Tipperary</td><td>22509</td><td>38625</td></tr>
-<tr><td>Donegal</td><td>22245</td><td>33776</td></tr>
-<tr><td>Clare</td><td>20430</td><td>42241</td></tr>
-<tr><td>Galway</td><td>19980</td><td>41765</td></tr></tbody></table>
-</pre>
+            <table class="resultTab"><thead><th>AgeEducationCeased</th><th>CountyName</th><th>DegreeHolders</th></thead>
+            <tbody><tr><td>18.8</td><td>Monaghan</td><td>8091</td></tr>
+            <tr><td>18.9</td><td>Cavan</td><td>9504</td></tr>
+            <tr><td>18.9</td><td>Donegal</td><td>22245</td></tr>
+            <tr><td>18.9</td><td>Wexford</td><td>19878</td></tr>
+        </tbody></table>
+            </pre>
+            <h3 id="topic">Q3. What county has the lowest earnings and what age on average does their education cease? (Merges dataset NEA08 & EA033)</h3>
             <pre class="query">
-# This query will combine the dataset from mean earning and education level.
-# For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe.
-# The eligible record for education level will be calculated before its related county will be matched against earning record.
-
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select * where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
-
-    ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
-    ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
-}
-ORDER BY ASC(xsd:integer(?mean))
-limit 10000
-</pre>
+            # This query will combine the dataset from mean earning and education level.  
+            # For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe. 
+            # The eligible record for education level will be calculated before its related county will be matched against earning record. 
+            
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            
+            select (?c as ?CountyName) (?mean as ?MeanEarning) (?ageeduceased_value as ?AgeEducationCeased) where {
+                ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+                ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+                ?s <http://dbpedia.org/ontology/county> ?c .
+                ?s <http://dbpedia.org/ontology/average> ?mean .
+                
+                ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
+                ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
+            }
+            ORDER BY ASC(xsd:integer(?mean))
+            limit 10000
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>ageeduceased</th><th>ageeduceased_value</th><th>c</th><th>mean</th><th>s</th></thead>
-<tbody><tr><td>http://www.example.org/EA033Record/28</td><td>18.9</td><td>Donegal</td><td>33776</td><td>http://www.example.org/record/MeanEarning/Donegal/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/88</td><td>18.8</td><td>Monaghan</td><td>34685</td><td>http://www.example.org/record/MeanEarning/Monaghan/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/64</td><td>19.3</td><td>Longford</td><td>36356</td><td>http://www.example.org/record/MeanEarning/Longford/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/128</td><td>18.9</td><td>Wexford</td><td>36617</td><td>http://www.example.org/record/MeanEarning/Wexford/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/60</td><td>19.7</td><td>Kerry</td><td>36966</td><td>http://www.example.org/record/MeanEarning/Kerry/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/76</td><td>19.6</td><td>Leitrim</td><td>37238</td><td>http://www.example.org/record/MeanEarning/Leitrim/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/16</td><td>18.9</td><td>Cavan</td><td>37243</td><td>http://www.example.org/record/MeanEarning/Cavan/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/20</td><td>19.5</td><td>Carlow</td><td>37589</td><td>http://www.example.org/record/MeanEarning/Carlow/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/92</td><td>19.4</td><td>Mayo</td><td>37703</td><td>http://www.example.org/record/MeanEarning/Mayo/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/96</td><td>19</td><td>Offaly</td><td>38249</td><td>http://www.example.org/record/MeanEarning/Offaly/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/112</td><td>19.3</td><td>Tipperary</td><td>38625</td><td>http://www.example.org/record/MeanEarning/Tipperary/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/100</td><td>19.4</td><td>Roscommon</td><td>38628</td><td>http://www.example.org/record/MeanEarning/Roscommon/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/108</td><td>19.9</td><td>Sligo</td><td>39466</td><td>http://www.example.org/record/MeanEarning/Sligo/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/68</td><td>19.3</td><td>Louth</td><td>39479</td><td>http://www.example.org/record/MeanEarning/Louth/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/56</td><td>19.6</td><td>Kilkenny</td><td>40080</td><td>http://www.example.org/record/MeanEarning/Kilkenny/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/120</td><td>19.7</td><td>Westmeath</td><td>40113</td><td>http://www.example.org/record/MeanEarning/Westmeath/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/80</td><td>19.5</td><td>Laois</td><td>40307</td><td>http://www.example.org/record/MeanEarning/Laois/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/40</td><td>22</td><td>Galway</td><td>41765</td><td>http://www.example.org/record/MeanEarning/Galway/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/8</td><td>20</td><td>Clare</td><td>42241</td><td>http://www.example.org/record/MeanEarning/Clare/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/4</td><td>20.3</td><td>Cork</td><td>44134</td><td>http://www.example.org/record/MeanEarning/Cork/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/84</td><td>19.6</td><td>Meath</td><td>45204</td><td>http://www.example.org/record/MeanEarning/Meath/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/124</td><td>20.2</td><td>Wicklow</td><td>45743</td><td>http://www.example.org/record/MeanEarning/Wicklow/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/52</td><td>20.1</td><td>Kildare</td><td>47044</td><td>http://www.example.org/record/MeanEarning/Kildare/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/24</td><td>20.6</td><td>Dublin</td><td>50801</td><td>http://www.example.org/record/MeanEarning/Dublin/2018</td></tr></tbody></table>
-</pre>
+            <table class="resultTab"><thead><th>AgeEducationCeased</th><th>CountyName</th><th>MeanEarning</th></thead>
+            <tbody><tr><td>18.9</td><td>Donegal</td><td>33776</td></tr>
+            <tr><td>18.8</td><td>Monaghan</td><td>34685</td></tr>
+            <tr><td>19.3</td><td>Longford</td><td>36356</td></tr>
+            <tr><td>18.9</td><td>Wexford</td><td>36617</td></tr>
+        </tbody></table>
+            </pre>
+            <h3 id="topic">Q4. For the county with the lowest number of secondary schools, how much does the population earn on average ? (Merges dataset EDA69 & NEA08)</h3>
             <pre class="query">
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select * where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-	?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
-
-    ?secSchool <http://dbpedia.org/ontology/county> ?c .
-    ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?secSchool <http://www.w3.org/2000/01/rdf-schema#label> "Secondary schools" .
-    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Schools providing Second Level Education  (Number)" .
-    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?secSchoolValue
-    #Filter (?secSchoolValue !=  "n/a")
-}
-ORDER BY ASC(xsd:integer(?secSchoolValue))
-limit 12
-
-</pre>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            select (?c as ?CountyName) (?mean as ?MeanEarning) (?secSchoolValue as ?NumberOfSecondarySchools) where {
+                ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+                ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+                ?s <http://dbpedia.org/ontology/county> ?c .
+                ?s <http://dbpedia.org/ontology/average> ?mean .
+                
+                ?secSchool <http://dbpedia.org/ontology/county> ?c .
+                ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?secSchool <http://www.w3.org/2000/01/rdf-schema#label> "Secondary schools" .
+                ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Schools providing Second Level Education  (Number)" .
+                ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?secSchoolValue
+                #Filter (?secSchoolValue !=  "n/a")
+            }
+            ORDER BY ASC(xsd:integer(?secSchoolValue))
+            limit 12
+            
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>c</th><th>mean</th><th>s</th><th>secSchool</th><th>secSchoolValue</th></thead>
-<tbody><tr><td>Leitrim</td><td>37238</td><td>http://www.example.org/record/MeanEarning/Leitrim/2018</td><td>http://www.example.org/EDA69Record/6165</td><td>n/a</td></tr>
-<tr><td>Limerick</td><td>42223</td><td>http://www.example.org/record/MeanEarning/Limerick/2018</td><td>http://www.example.org/EDA69Record/4275</td><td>n/a</td></tr>
-<tr><td>Waterford</td><td>39501</td><td>http://www.example.org/record/MeanEarning/Waterford/2018</td><td>http://www.example.org/EDA69Record/5115</td><td>n/a</td></tr>
-<tr><td>Laois</td><td>40307</td><td>http://www.example.org/record/MeanEarning/Laois/2018</td><td>http://www.example.org/EDA69Record/1755</td><td>2</td></tr>
-<tr><td>Cavan</td><td>37243</td><td>http://www.example.org/record/MeanEarning/Cavan/2018</td><td>http://www.example.org/EDA69Record/7005</td><td>4</td></tr>
-<tr><td>Donegal</td><td>33776</td><td>http://www.example.org/record/MeanEarning/Donegal/2018</td><td>http://www.example.org/EDA69Record/7215</td><td>4</td></tr>
-<tr><td>Longford</td><td>36356</td><td>http://www.example.org/record/MeanEarning/Longford/2018</td><td>http://www.example.org/EDA69Record/1965</td><td>4</td></tr>
-<tr><td>Roscommon</td><td>38628</td><td>http://www.example.org/record/MeanEarning/Roscommon/2018</td><td>http://www.example.org/EDA69Record/6585</td><td>4</td></tr>
-<tr><td>Carlow</td><td>37589</td><td>http://www.example.org/record/MeanEarning/Carlow/2018</td><td>http://www.example.org/EDA69Record/285</td><td>5</td></tr>
-<tr><td>Offaly</td><td>38249</td><td>http://www.example.org/record/MeanEarning/Offaly/2018</td><td>http://www.example.org/EDA69Record/2595</td><td>5</td></tr>
-<tr><td>Meath</td><td>45204</td><td>http://www.example.org/record/MeanEarning/Meath/2018</td><td>http://www.example.org/EDA69Record/2385</td><td>6</td></tr>
-<tr><td>Monaghan</td><td>34685</td><td>http://www.example.org/record/MeanEarning/Monaghan/2018</td><td>http://www.example.org/EDA69Record/7425</td><td>6</td></tr></tbody></table>
-</pre>
+            <table class="resultTab"><thead><th>CountyName</th><th>MeanEarning</th><th>NumberOfSecondarySchools</th></thead>
+            <tbody>
+            <tr><td>Laois</td><td>40307</td><td>2</td></tr>
+            <tr><td>Cavan</td><td>37243</td><td>4</td></tr>
+            <tr><td>Donegal</td><td>33776</td><td>4</td></tr>
+            <tr><td>Longford</td><td>36356</td><td>4</td></tr></tbody></table>
+            </pre>
+            <h3 id="topic">Q5. For the county with the lowest number of bachelor’s degrees, how many schools there are providing secondary level education? (Merges dataset EZ073 & EDA69)</h3>
             <pre class="query">
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select * where {
-
-    ?secSchool <http://dbpedia.org/ontology/county> ?c .
-    ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?secSchool <http://www.w3.org/2000/01/rdf-schema#label> "Secondary schools" .
-    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Schools providing Second Level Education  (Number)" .
-    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?secSchoolValue .
-
-    ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
-    ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?bachelordegree <http://purl.org/dc/terms#educationLevel> "Ordinary bachelor degree/professional qualification or both" .
-    ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
-    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?bachelordegree_value .
-    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
-
-
-
-}
-ORDER BY ASC(xsd:integer(?bachelordegree_value))
-limit 120
-
-</pre>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            select (?c as ?CountyName) (?secSchoolValue as ?NumberOfSecondarySchools) (?bachelordegree_value as ?BachelorDegreeHolders) where {
+               
+                ?secSchool <http://dbpedia.org/ontology/county> ?c .
+                ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?secSchool <http://www.w3.org/2000/01/rdf-schema#label> "Secondary schools" .
+                ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Schools providing Second Level Education  (Number)" .
+                ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?secSchoolValue .
+                
+                ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
+                ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?bachelordegree <http://purl.org/dc/terms#educationLevel> "Ordinary bachelor degree/professional qualification or both" .
+                ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
+                ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?bachelordegree_value .
+                ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
+                
+            
+            
+            }
+            ORDER BY ASC(xsd:integer(?bachelordegree_value))
+            limit 120
+            
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>bachelordegree</th><th>bachelordegree_value</th><th>c</th><th>secSchool</th><th>secSchoolValue</th></thead>
-<tbody><tr><td>http://www.example.org/EZ037Record/564</td><td>1574</td><td>Leitrim</td><td>http://www.example.org/EDA69Record/6165</td><td>n/a</td></tr>
-<tr><td>http://www.example.org/EZ037Record/474</td><td>1765</td><td>Longford</td><td>http://www.example.org/EDA69Record/1965</td><td>4</td></tr>
-<tr><td>http://www.example.org/EZ037Record/144</td><td>2317</td><td>Carlow</td><td>http://www.example.org/EDA69Record/285</td><td>5</td></tr>
-<tr><td>http://www.example.org/EZ037Record/654</td><td>2547</td><td>Monaghan</td><td>http://www.example.org/EDA69Record/7425</td><td>6</td></tr>
-<tr><td>http://www.example.org/EZ037Record/744</td><td>3119</td><td>Roscommon</td><td>http://www.example.org/EDA69Record/6585</td><td>4</td></tr>
-<tr><td>http://www.example.org/EZ037Record/714</td><td>3162</td><td>Offaly</td><td>http://www.example.org/EDA69Record/2595</td><td>5</td></tr>
-<tr><td>http://www.example.org/EZ037Record/114</td><td>3172</td><td>Cavan</td><td>http://www.example.org/EDA69Record/7005</td><td>4</td></tr>
-<tr><td>http://www.example.org/EZ037Record/804</td><td>3460</td><td>Sligo</td><td>http://www.example.org/EDA69Record/6795</td><td>7</td></tr>
-<tr><td>http://www.example.org/EZ037Record/594</td><td>3580</td><td>Laois</td><td>http://www.example.org/EDA69Record/1755</td><td>2</td></tr>
-<tr><td>http://www.example.org/EZ037Record/894</td><td>4150</td><td>Westmeath</td><td>http://www.example.org/EDA69Record/2805</td><td>10</td></tr>
-<tr><td>http://www.example.org/EZ037Record/294</td><td>4759</td><td>Galway</td><td>http://www.example.org/EDA69Record/5745</td><td>8</td></tr>
-<tr><td>http://www.example.org/EZ037Record/414</td><td>4811</td><td>Kilkenny</td><td>http://www.example.org/EDA69Record/1545</td><td>7</td></tr>
-<tr><td>http://www.example.org/EZ037Record/504</td><td>5892</td><td>Louth</td><td>http://www.example.org/EDA69Record/2175</td><td>11</td></tr>
-<tr><td>http://www.example.org/EZ037Record/24</td><td>5927</td><td>Cork</td><td>http://www.example.org/EDA69Record/3645</td><td>18</td></tr>
-<tr><td>http://www.example.org/EZ037Record/954</td><td>6214</td><td>Wexford</td><td>http://www.example.org/EDA69Record/3015</td><td>12</td></tr>
-<tr><td>http://www.example.org/EZ037Record/54</td><td>6322</td><td>Clare</td><td>http://www.example.org/EDA69Record/3435</td><td>8</td></tr>
-<tr><td>http://www.example.org/EZ037Record/684</td><td>6341</td><td>Mayo</td><td>http://www.example.org/EDA69Record/6375</td><td>15</td></tr>
-<tr><td>http://www.example.org/EZ037Record/204</td><td>6699</td><td>Donegal</td><td>http://www.example.org/EDA69Record/7215</td><td>4</td></tr>
-<tr><td>http://www.example.org/EZ037Record/834</td><td>7073</td><td>Tipperary</td><td>http://www.example.org/EDA69Record/4905</td><td>19</td></tr>
-<tr><td>http://www.example.org/EZ037Record/924</td><td>7846</td><td>Wicklow</td><td>http://www.example.org/EDA69Record/3225</td><td>9</td></tr>
-<tr><td>http://www.example.org/EZ037Record/444</td><td>8113</td><td>Kerry</td><td>http://www.example.org/EDA69Record/4065</td><td>14</td></tr>
-<tr><td>http://www.example.org/EZ037Record/324</td><td>9498</td><td>Galway County</td><td>http://www.example.org/EDA69Record/5955</td><td>16</td></tr>
-<tr><td>http://www.example.org/EZ037Record/624</td><td>9770</td><td>Meath</td><td>http://www.example.org/EDA69Record/2385</td><td>6</td></tr>
-<tr><td>http://www.example.org/EZ037Record/384</td><td>11576</td><td>Kildare</td><td>http://www.example.org/EDA69Record/1335</td><td>12</td></tr>
-<tr><td>http://www.example.org/EZ037Record/774</td><td>13073</td><td>South Dublin</td><td>http://www.example.org/EDA69Record/705</td><td>14</td></tr>
-<tr><td>http://www.example.org/EZ037Record/234</td><td>13989</td><td>Dún Laoghaire-Rathdown</td><td>http://www.example.org/EDA69Record/1125</td><td>26</td></tr>
-<tr><td>http://www.example.org/EZ037Record/264</td><td>16378</td><td>Fingal</td><td>http://www.example.org/EDA69Record/915</td><td>14</td></tr>
-<tr><td>http://www.example.org/EZ037Record/84</td><td>22491</td><td>Cork County</td><td>http://www.example.org/EDA69Record/3855</td><td>29</td></tr>
-<tr><td>http://www.example.org/EZ037Record/174</td><td>27047</td><td>Dublin</td><td>http://www.example.org/EDA69Record/495</td><td>58</td></tr></tbody></table>
-</pre>
+            <table class="resultTab"><thead><th>BachelorDegreeHolders</th><th>CountyName</th><th>NumberOfSecondarySchools</th></thead>
+            <tbody>
+            <tr><td>1765</td><td>Longford</td><td>4</td></tr>
+            <tr><td>2317</td><td>Carlow</td><td>5</td></tr>
+            <tr><td>2547</td><td>Monaghan</td><td>6</td></tr>
+            <tr><td>3119</td><td>Roscommon</td><td>4</td></tr></tbody></table>
+            </pre>
+            <h3 id="topic">Q6. Does the county with the lowest average age for ceasing education earn the least? (Merges dataset EA033 & NEA08)</h3>
             <pre class="query">
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select * where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
-
-    ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
-    ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
-}
-ORDER BY ASC(xsd:integer(?ageeduceased_value))
-limit 10000
-
-</pre>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            select (?c as ?CountyName) (?mean as ?MeanEarning) (?ageeduceased_value as ?AgeEducationCeased) where {
+                ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+                ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+                ?s <http://dbpedia.org/ontology/county> ?c .
+                ?s <http://dbpedia.org/ontology/average> ?mean .
+                
+                ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
+                ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
+            }
+            ORDER BY ASC(xsd:integer(?ageeduceased_value))
+            limit 10000
+            
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>ageeduceased</th><th>ageeduceased_value</th><th>c</th><th>mean</th><th>s</th></thead>
-<tbody><tr><td>http://www.example.org/EA033Record/100</td><td>19.4</td><td>Roscommon</td><td>38628</td><td>http://www.example.org/record/MeanEarning/Roscommon/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/108</td><td>19.9</td><td>Sligo</td><td>39466</td><td>http://www.example.org/record/MeanEarning/Sligo/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/112</td><td>19.3</td><td>Tipperary</td><td>38625</td><td>http://www.example.org/record/MeanEarning/Tipperary/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/120</td><td>19.7</td><td>Westmeath</td><td>40113</td><td>http://www.example.org/record/MeanEarning/Westmeath/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/124</td><td>20.2</td><td>Wicklow</td><td>45743</td><td>http://www.example.org/record/MeanEarning/Wicklow/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/128</td><td>18.9</td><td>Wexford</td><td>36617</td><td>http://www.example.org/record/MeanEarning/Wexford/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/16</td><td>18.9</td><td>Cavan</td><td>37243</td><td>http://www.example.org/record/MeanEarning/Cavan/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/20</td><td>19.5</td><td>Carlow</td><td>37589</td><td>http://www.example.org/record/MeanEarning/Carlow/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/24</td><td>20.6</td><td>Dublin</td><td>50801</td><td>http://www.example.org/record/MeanEarning/Dublin/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/28</td><td>18.9</td><td>Donegal</td><td>33776</td><td>http://www.example.org/record/MeanEarning/Donegal/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/4</td><td>20.3</td><td>Cork</td><td>44134</td><td>http://www.example.org/record/MeanEarning/Cork/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/52</td><td>20.1</td><td>Kildare</td><td>47044</td><td>http://www.example.org/record/MeanEarning/Kildare/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/56</td><td>19.6</td><td>Kilkenny</td><td>40080</td><td>http://www.example.org/record/MeanEarning/Kilkenny/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/60</td><td>19.7</td><td>Kerry</td><td>36966</td><td>http://www.example.org/record/MeanEarning/Kerry/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/64</td><td>19.3</td><td>Longford</td><td>36356</td><td>http://www.example.org/record/MeanEarning/Longford/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/68</td><td>19.3</td><td>Louth</td><td>39479</td><td>http://www.example.org/record/MeanEarning/Louth/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/76</td><td>19.6</td><td>Leitrim</td><td>37238</td><td>http://www.example.org/record/MeanEarning/Leitrim/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/80</td><td>19.5</td><td>Laois</td><td>40307</td><td>http://www.example.org/record/MeanEarning/Laois/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/84</td><td>19.6</td><td>Meath</td><td>45204</td><td>http://www.example.org/record/MeanEarning/Meath/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/88</td><td>18.8</td><td>Monaghan</td><td>34685</td><td>http://www.example.org/record/MeanEarning/Monaghan/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/92</td><td>19.4</td><td>Mayo</td><td>37703</td><td>http://www.example.org/record/MeanEarning/Mayo/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/96</td><td>19</td><td>Offaly</td><td>38249</td><td>http://www.example.org/record/MeanEarning/Offaly/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/8</td><td>20</td><td>Clare</td><td>42241</td><td>http://www.example.org/record/MeanEarning/Clare/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/40</td><td>22</td><td>Galway</td><td>41765</td><td>http://www.example.org/record/MeanEarning/Galway/2018</td></tr></tbody></table>
-</pre>
+            <table class="resultTab"><thead><th>AgeEducationCeased</th><th>CountyName</th><th>MeanEarning</th></thead>
+            <tbody><tr><td>18.8</td><td>Monaghan</td><td>34685</td></tr>
+            <tr><td>18.9</td><td>Cavan</td><td>37243</td></tr>
+            <tr><td>18.9</td><td>Donegal</td><td>33776</td></tr>
+            <tr><td>18.9</td><td>Wexford</td><td>36617</td></tr></tbody></table>
+            </pre>
+            <h3 id="topic">Q7. Does the county with the highest average age for ceasing education earn the most? (Merges dataset EA033 & NEA08)</h3>
             <pre class="query">
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select * where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
-
-    ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
-    ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
-}
-ORDER BY DESC(xsd:integer(?ageeduceased_value))
-limit 10000
-
-</pre>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            select (?c as ?CountyName) (?mean as ?MeanEarning) (?ageeduceased_value as ?AgeEducationCeased) where {
+                ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+                ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+                ?s <http://dbpedia.org/ontology/county> ?c .
+                ?s <http://dbpedia.org/ontology/average> ?mean .
+                
+                ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
+                ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
+            }
+            ORDER BY DESC(xsd:integer(?ageeduceased_value))
+            limit 10000
+            
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>ageeduceased</th><th>ageeduceased_value</th><th>c</th><th>mean</th><th>s</th></thead>
-<tbody><tr><td>http://www.example.org/EA033Record/40</td><td>22</td><td>Galway</td><td>41765</td><td>http://www.example.org/record/MeanEarning/Galway/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/8</td><td>20</td><td>Clare</td><td>42241</td><td>http://www.example.org/record/MeanEarning/Clare/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/96</td><td>19</td><td>Offaly</td><td>38249</td><td>http://www.example.org/record/MeanEarning/Offaly/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/100</td><td>19.4</td><td>Roscommon</td><td>38628</td><td>http://www.example.org/record/MeanEarning/Roscommon/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/108</td><td>19.9</td><td>Sligo</td><td>39466</td><td>http://www.example.org/record/MeanEarning/Sligo/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/112</td><td>19.3</td><td>Tipperary</td><td>38625</td><td>http://www.example.org/record/MeanEarning/Tipperary/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/120</td><td>19.7</td><td>Westmeath</td><td>40113</td><td>http://www.example.org/record/MeanEarning/Westmeath/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/124</td><td>20.2</td><td>Wicklow</td><td>45743</td><td>http://www.example.org/record/MeanEarning/Wicklow/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/128</td><td>18.9</td><td>Wexford</td><td>36617</td><td>http://www.example.org/record/MeanEarning/Wexford/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/16</td><td>18.9</td><td>Cavan</td><td>37243</td><td>http://www.example.org/record/MeanEarning/Cavan/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/20</td><td>19.5</td><td>Carlow</td><td>37589</td><td>http://www.example.org/record/MeanEarning/Carlow/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/24</td><td>20.6</td><td>Dublin</td><td>50801</td><td>http://www.example.org/record/MeanEarning/Dublin/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/28</td><td>18.9</td><td>Donegal</td><td>33776</td><td>http://www.example.org/record/MeanEarning/Donegal/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/4</td><td>20.3</td><td>Cork</td><td>44134</td><td>http://www.example.org/record/MeanEarning/Cork/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/52</td><td>20.1</td><td>Kildare</td><td>47044</td><td>http://www.example.org/record/MeanEarning/Kildare/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/56</td><td>19.6</td><td>Kilkenny</td><td>40080</td><td>http://www.example.org/record/MeanEarning/Kilkenny/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/60</td><td>19.7</td><td>Kerry</td><td>36966</td><td>http://www.example.org/record/MeanEarning/Kerry/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/64</td><td>19.3</td><td>Longford</td><td>36356</td><td>http://www.example.org/record/MeanEarning/Longford/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/68</td><td>19.3</td><td>Louth</td><td>39479</td><td>http://www.example.org/record/MeanEarning/Louth/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/76</td><td>19.6</td><td>Leitrim</td><td>37238</td><td>http://www.example.org/record/MeanEarning/Leitrim/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/80</td><td>19.5</td><td>Laois</td><td>40307</td><td>http://www.example.org/record/MeanEarning/Laois/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/84</td><td>19.6</td><td>Meath</td><td>45204</td><td>http://www.example.org/record/MeanEarning/Meath/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/88</td><td>18.8</td><td>Monaghan</td><td>34685</td><td>http://www.example.org/record/MeanEarning/Monaghan/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/92</td><td>19.4</td><td>Mayo</td><td>37703</td><td>http://www.example.org/record/MeanEarning/Mayo/2018</td></tr></tbody></table>
-</pre>
+            <table class="resultTab"><thead><th>AgeEducationCeased</th><th>CountyName</th><th>MeanEarning</th></thead>
+            <tbody><tr><td>22</td><td>Galway</td><td>41765</td></tr>
+            <tr><td>20</td><td>Clare</td><td>42241</td></tr>
+            <tr><td>19</td><td>Offaly</td><td>38249</td></tr>
+            <tr><td>18.8</td><td>Monaghan</td><td>34685</td></tr></tbody></table>
+            </pre>
+            <h3 id="topic">Q8. For the county with the most postgraduate degree holders, what was the mean earnings in 2018? (Merges dataset EZ073 & NEA08)</h3>
             <pre class="query">
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
-
-    ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
-    ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
-
-    ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
-    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
-
-    FILTER (
-            ?degree in ("Postgraduate diploma or degree","Doctorate (Ph.D.)")
-    )
-
-    ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
-    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value
-}
-GROUP BY ?c ?mean
-ORDER BY DESC(?degree_sum)
-limit 10
-
-</pre>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            select  (?c as ?CountyName) (?mean as ?MeanEarning)  (SUM(xsd:integer(?degree_value)) as ?PostgraduateDegreeHolders) where {
+                ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+                ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+                ?s <http://dbpedia.org/ontology/county> ?c .
+                ?s <http://dbpedia.org/ontology/average> ?mean .
+                
+                ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
+                ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
+                
+                ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
+                ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
+                        
+                FILTER (
+                        ?degree in ("Postgraduate diploma or degree","Doctorate (Ph.D.)")
+                )
+                
+                ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
+                ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value
+            }
+            GROUP BY ?c ?mean
+            ORDER BY DESC(?numberOfPostDegreeHolder)
+            limit 10
+            
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>c</th><th>degree_sum</th><th>mean</th></thead>
-<tbody><tr><td>Dublin</td><td>58960</td><td>50801</td></tr>
-<tr><td>Kildare</td><td>14672</td><td>47044</td></tr>
-<tr><td>Meath</td><td>10183</td><td>45204</td></tr>
-<tr><td>Cork</td><td>9651</td><td>44134</td></tr>
-<tr><td>Wicklow</td><td>9190</td><td>45743</td></tr>
-<tr><td>Galway</td><td>8301</td><td>41765</td></tr>
-<tr><td>Donegal</td><td>7017</td><td>33776</td></tr>
-<tr><td>Kerry</td><td>6812</td><td>36966</td></tr>
-<tr><td>Tipperary</td><td>6794</td><td>38625</td></tr>
-<tr><td>Clare</td><td>6637</td><td>42241</td></tr></tbody></table>
-</pre>
+            <table class="resultTab"><thead><th>CountyName</th><th>MeanEarning</th><th>PostgraduateDegreeHolders</th></thead>
+            <tbody><tr><td>Carlow</td><td>37589</td><td>2288</td></tr>
+            <tr><td>Cavan</td><td>37243</td><td>2692</td></tr>
+            <tr><td>Clare</td><td>42241</td><td>6637</td></tr>
+            <tr><td>Cork</td><td>44134</td><td>9651</td></tr></tbody></table>
+            </pre>
+            <h3 id="topic">Q9. For the county with highest percentage of PhD holders, what is the mean earning, average age for ending education, and the number of secondary school(Merges all datasets)</h3>
             <pre class="query">
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-select  ?c ?mean  (SUM(xsd:integer(?nodegreesum))/SUM(xsd:integer(?degree_value)) as ?nodegree_perc) ?secSchoolValue ?averageEduEndValue where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
-
-    ?secSchool <http://dbpedia.org/ontology/county> ?c .
-    ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?secSchool <http://www.w3.org/2000/01/rdf-schema#label> "Secondary schools" .
-    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Schools providing Second Level Education  (Number)" .
-    ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?secSchoolValue .
-
-    ?averageEduEnd <http://dbpedia.org/ontology/county> ?c .
-    ?averageEduEnd <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?averageEduEnd <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)" .
-    ?averageEduEnd <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?averageEduEndValue .
-
-    ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
-    ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
-
-    ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
-
-    BIND ( IF(?degree in ("Doctorate (Ph.D.)"), ?degree_value, 0 ) as ?nodegreesum )
-
-    ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
-    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value .
-    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
-
-
-}
-GROUP BY ?c ?mean ?secSchoolValue ?averageEduEndValue
-ORDER BY DESC(?nodegree_perc)
-limit 10
-</pre>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            select  (?c as ?CountyName) (?mean as ?MeanEarning)  (SUM(xsd:integer(?degreesum))/SUM(xsd:integer(?degree_value)) as ?PercentageOfPhDHolders)  (?secSchoolValue as ?NumberOfSecondarySchools) (?averageEduEndValue as ?AgeEducationCeased) where {
+                ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+                ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+                ?s <http://dbpedia.org/ontology/county> ?c .
+                ?s <http://dbpedia.org/ontology/average> ?mean .
+                
+                ?secSchool <http://dbpedia.org/ontology/county> ?c .
+                ?secSchool <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?secSchool <http://www.w3.org/2000/01/rdf-schema#label> "Secondary schools" .
+                ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Schools providing Second Level Education  (Number)" .
+                ?secSchool <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?secSchoolValue .
+                
+                ?averageEduEnd <http://dbpedia.org/ontology/county> ?c .
+                ?averageEduEnd <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?averageEduEnd <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)" .
+                ?averageEduEnd <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?averageEduEndValue .
+                
+                ?bachelordegree <http://dbpedia.org/ontology/county> ?c .
+                ?bachelordegree <http://dbpedia.org/ontology#censusYear> "2016" .
+                
+                ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.
+                
+                BIND ( IF(?degree in ("Doctorate (Ph.D.)"), ?degree_value, 0 ) as ?degreesum )
+                
+                ?bachelordegree <http://dbpedia.org/ontology/sex> "Both sexes".
+                ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value .
+                ?bachelordegree <http://xmlns.com/foaf/0.1/#age> "Total persons" .
+               
+                
+            }
+            GROUP BY ?c ?mean ?secSchoolValue ?averageEduEndValue
+            ORDER BY DESC(?nodegree_perc)
+            limit 10
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>averageEduEndValue</th><th>c</th><th>mean</th><th>nodegree_perc</th><th>secSchoolValue</th></thead>
-<tbody><tr><td>22</td><td>Galway</td><td>41765</td><td>0.008933347598159837380978</td><td>8</td></tr>
-<tr><td>20.6</td><td>Dublin</td><td>50801</td><td>0.006255555956303398176692</td><td>58</td></tr>
-<tr><td>20.3</td><td>Cork</td><td>44134</td><td>0.006038972492735594195902</td><td>18</td></tr>
-<tr><td>20.2</td><td>Wicklow</td><td>45743</td><td>0.003953412371321193195229</td><td>9</td></tr>
-<tr><td>20.1</td><td>Kildare</td><td>47044</td><td>0.003838550052088265934274</td><td>12</td></tr>
-<tr><td>20</td><td>Clare</td><td>42241</td><td>0.003051101935760630596815</td><td>8</td></tr>
-<tr><td>19.9</td><td>Sligo</td><td>39466</td><td>0.002862778139481444601892</td><td>7</td></tr>
-<tr><td>19.6</td><td>Meath</td><td>45204</td><td>0.002528864645856289310328</td><td>6</td></tr>
-<tr><td>19.7</td><td>Kerry</td><td>36966</td><td>0.002249487032863533923105</td><td>14</td></tr>
-<tr><td>19.7</td><td>Westmeath</td><td>40113</td><td>0.002116095369229654322777</td><td>10</td></tr></tbody></table>
-</pre>
+                <table class="resultTab"><thead><th>AgeEducationCeased</th><th>CountyName</th><th>MeanEarning</th><th>NumberOfSecondarySchools</th><th>PercentageOfPhDHolders</th></thead>
+                    <tbody><tr><td>22</td><td>Galway</td><td>41765</td><td>8</td><td>0.89%</td></tr>
+                    <tr><td>20.6</td><td>Dublin</td><td>50801</td><td>58</td><td>0.62%</td></tr>
+                    <tr><td>20.3</td><td>Cork</td><td>44134</td><td>18</td><td>0.60%</td></tr>
+                    <tr><td>20.2</td><td>Wicklow</td><td>45743</td><td>9</td><td>0.39%</td></tr></tbody></table>
+            </pre>
+            <h3 id="topic">Q10. In 2016, the county with the lowest mean earning , what age on average do they finish their education  ? (Merges dataset EA033 & NEA08)</h3>
             <pre class="query">
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select * where {
-    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
-    ?s <http://dbpedia.org/ontology/censusYear> "2018" .
-    ?s <http://dbpedia.org/ontology/county> ?c .
-    ?s <http://dbpedia.org/ontology/average> ?mean .
-
-    ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
-    ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
-    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
-}
-ORDER BY ASC(xsd:integer(?mean))
-limit 10000
-
-</pre>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            select (?c as ?CountyName) (?mean as ?MeanEarning) (?ageeduceased_value as ?AgeEducationCeased) where {
+                ?s rdf:type <http://example.org/csv/MeanEarningRecord> .
+                ?s <http://dbpedia.org/ontology/censusYear> "2018" .
+                ?s <http://dbpedia.org/ontology/county> ?c .
+                ?s <http://dbpedia.org/ontology/average> ?mean .
+                
+                ?ageeduceased <http://dbpedia.org/ontology/county> ?c .
+                ?ageeduceased <http://dbpedia.org/ontology#censusYear> "2016" .
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> "Average_Age_Education_Ceased_(Number)".
+                ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value
+            }
+            ORDER BY ASC(xsd:integer(?mean))
+            limit 10000
+            
+            </pre>
             <pre class="result">
-<table class="resultTab"><thead><th>ageeduceased</th><th>ageeduceased_value</th><th>c</th><th>mean</th><th>s</th></thead>
-<tbody><tr><td>http://www.example.org/EA033Record/28</td><td>18.9</td><td>Donegal</td><td>33776</td><td>http://www.example.org/record/MeanEarning/Donegal/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/88</td><td>18.8</td><td>Monaghan</td><td>34685</td><td>http://www.example.org/record/MeanEarning/Monaghan/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/64</td><td>19.3</td><td>Longford</td><td>36356</td><td>http://www.example.org/record/MeanEarning/Longford/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/128</td><td>18.9</td><td>Wexford</td><td>36617</td><td>http://www.example.org/record/MeanEarning/Wexford/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/60</td><td>19.7</td><td>Kerry</td><td>36966</td><td>http://www.example.org/record/MeanEarning/Kerry/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/76</td><td>19.6</td><td>Leitrim</td><td>37238</td><td>http://www.example.org/record/MeanEarning/Leitrim/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/16</td><td>18.9</td><td>Cavan</td><td>37243</td><td>http://www.example.org/record/MeanEarning/Cavan/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/20</td><td>19.5</td><td>Carlow</td><td>37589</td><td>http://www.example.org/record/MeanEarning/Carlow/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/92</td><td>19.4</td><td>Mayo</td><td>37703</td><td>http://www.example.org/record/MeanEarning/Mayo/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/96</td><td>19</td><td>Offaly</td><td>38249</td><td>http://www.example.org/record/MeanEarning/Offaly/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/112</td><td>19.3</td><td>Tipperary</td><td>38625</td><td>http://www.example.org/record/MeanEarning/Tipperary/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/100</td><td>19.4</td><td>Roscommon</td><td>38628</td><td>http://www.example.org/record/MeanEarning/Roscommon/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/108</td><td>19.9</td><td>Sligo</td><td>39466</td><td>http://www.example.org/record/MeanEarning/Sligo/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/68</td><td>19.3</td><td>Louth</td><td>39479</td><td>http://www.example.org/record/MeanEarning/Louth/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/56</td><td>19.6</td><td>Kilkenny</td><td>40080</td><td>http://www.example.org/record/MeanEarning/Kilkenny/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/120</td><td>19.7</td><td>Westmeath</td><td>40113</td><td>http://www.example.org/record/MeanEarning/Westmeath/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/80</td><td>19.5</td><td>Laois</td><td>40307</td><td>http://www.example.org/record/MeanEarning/Laois/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/40</td><td>22</td><td>Galway</td><td>41765</td><td>http://www.example.org/record/MeanEarning/Galway/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/8</td><td>20</td><td>Clare</td><td>42241</td><td>http://www.example.org/record/MeanEarning/Clare/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/4</td><td>20.3</td><td>Cork</td><td>44134</td><td>http://www.example.org/record/MeanEarning/Cork/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/84</td><td>19.6</td><td>Meath</td><td>45204</td><td>http://www.example.org/record/MeanEarning/Meath/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/124</td><td>20.2</td><td>Wicklow</td><td>45743</td><td>http://www.example.org/record/MeanEarning/Wicklow/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/52</td><td>20.1</td><td>Kildare</td><td>47044</td><td>http://www.example.org/record/MeanEarning/Kildare/2018</td></tr>
-<tr><td>http://www.example.org/EA033Record/24</td><td>20.6</td><td>Dublin</td><td>50801</td><td>http://www.example.org/record/MeanEarning/Dublin/2018</td></tr></tbody></table>
-</pre>
+            <table class="resultTab"><thead><th>AgeEducationCeased</th><th>CountyName</th><th>MeanEarning</th></thead>
+            <tbody><tr><td>18.9</td><td>Donegal</td><td>33776</td></tr>
+            <tr><td>18.8</td><td>Monaghan</td><td>34685</td></tr>
+            <tr><td>19.3</td><td>Longford</td><td>36356</td></tr>
+            <tr><td>18.9</td><td>Wexford</td><td>36617</td></tr></tbody></table>
+            </pre>
+
 
 
          </div>
