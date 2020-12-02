@@ -1,6 +1,8 @@
-# Mapping for Average Age Education Ceased of Population Aged 15 Years and Over 2011 to 2016 by County and City, CensusYear and Statistic
-# https://statbank.cso.ie/px/pxeirestat/Statire/SelectVarVal/Define.asp?maintable=EA033&PLanguage=0
-# Uplifted data can be identified by the statisticsCategory field
+# Mapping for Average Age Education Ceased of Population Aged 15 Years and Over 2011 to 2016 by County andCity, CensusYear and Statistic
+# https://data.gov.ie/dataset/ceased-of-population-aged-15-years-and-over-2011-to-2016-by-county-and-city-censusyear-and-statistic
+# Uplifted data can be identified by the ID field
+# Vocabulary sources can be seen as prefixes below.
+
   @prefix rr: <http://www.w3.org/ns/r2rml#> .
   @prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#> .
     @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
