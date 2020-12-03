@@ -17,7 +17,7 @@ function Q10() {
     let [response, setResponse] = React.useState({});
     let query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"+
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"+
-        "select * where {\n"+
+        "select (?c as ?CountyName) (?mean as ?MeanEarning) (?ageeduceased_value as ?AgeEducationCeased) where {\n"+
         "    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .\n"+
         "    ?s <http://dbpedia.org/ontology/censusYear> \"2018\" .\n"+
         "    ?s <http://dbpedia.org/ontology/county> ?c .\n"+

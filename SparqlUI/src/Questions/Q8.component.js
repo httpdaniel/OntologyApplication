@@ -17,7 +17,7 @@ function Q8() {
     let [response, setResponse] = React.useState({});
     let query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"+
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"+
-        "select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {\n"+
+        "select  (?c as ?CountyName) (?mean as ?MeanEarning)  (SUM(xsd:integer(?degree_value)) as ?PostgraduateDegreeHolders) where {\n"+
         "    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .\n"+
         "    ?s <http://dbpedia.org/ontology/censusYear> \"2018\" .\n"+
         "    ?s <http://dbpedia.org/ontology/county> ?c .\n"+
@@ -27,6 +27,7 @@ function Q8() {
         "    ?bachelordegree <http://dbpedia.org/ontology#censusYear> \"2016\" .\n"+
         "    \n"+
         "    ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.\n"+
+        "    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> \"Total persons\" .\n"+
         "            \n"+
         "    FILTER (\n"+
         "            ?degree in (\"Postgraduate diploma or degree\",\"Doctorate (Ph.D.)\")\n"+
@@ -36,7 +37,7 @@ function Q8() {
         "    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value\n"+
         "}\n"+
         "GROUP BY ?c ?mean\n"+
-        "ORDER BY DESC(?degree_sum)\n"+
+        "ORDER BY DESC(?numberOfPostDegreeHolder)\n"+
         "limit 10\n"+
         "\n"+
         "\n";

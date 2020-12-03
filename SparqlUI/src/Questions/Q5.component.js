@@ -17,7 +17,7 @@ function Q5() {
     let [response, setResponse] = React.useState({});
     let query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"+
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"+
-        "select * where {\n"+
+        "select (?c as ?CountyName) (?secSchoolValue as ?NumberOfSecondarySchools) (?bachelordegree_value as ?BachelorDegreeHolders) where {\n"+
         "   \n"+
         "    ?secSchool <http://dbpedia.org/ontology/county> ?c .\n"+
         "    ?secSchool <http://dbpedia.org/ontology#censusYear> \"2016\" .\n"+

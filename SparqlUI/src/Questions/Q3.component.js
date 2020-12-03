@@ -15,9 +15,14 @@ import "./Query.scss"
 function Q3() {
 
     let [response, setResponse] = React.useState({});
-    let query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"+
+    let query = "# This query will combine the dataset from mean earning and education level.  \n"+
+        "# For both dataset the latest available data is displayed, even if they are not entirely in the same timeframe. \n"+
+        "# The eligible record for education level will be calculated before its related county will be matched against earning record. \n"+
+        "\n"+
+        "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"+
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"+
-        "select * where {\n"+
+        "\n"+
+        "select (?c as ?CountyName) (?mean as ?MeanEarning) (?ageeduceased_value as ?AgeEducationCeased) where {\n"+
         "    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .\n"+
         "    ?s <http://dbpedia.org/ontology/censusYear> \"2018\" .\n"+
         "    ?s <http://dbpedia.org/ontology/county> ?c .\n"+

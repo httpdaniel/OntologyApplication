@@ -17,7 +17,7 @@ function Q9() {
     let [response, setResponse] = React.useState({});
     let query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"+
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"+
-        "select  ?c ?mean  (SUM(xsd:integer(?nodegreesum))/SUM(xsd:integer(?degree_value)) as ?nodegree_perc) ?secSchoolValue ?averageEduEndValue where {\n"+
+        "select  (?c as ?CountyName) (?mean as ?MeanEarning)  (SUM(xsd:integer(?degreesum))/SUM(xsd:integer(?degree_value)) as ?PercentageOfPhDHolders)  (?secSchoolValue as ?NumberOfSecondarySchools) (?averageEduEndValue as ?AgeEducationCeased) where {\n"+
         "    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .\n"+
         "    ?s <http://dbpedia.org/ontology/censusYear> \"2018\" .\n"+
         "    ?s <http://dbpedia.org/ontology/county> ?c .\n"+
@@ -38,16 +38,17 @@ function Q9() {
         "    ?bachelordegree <http://dbpedia.org/ontology#censusYear> \"2016\" .\n"+
         "    \n"+
         "    ?bachelordegree <http://purl.org/dc/terms#educationLevel>   ?degree.\n"+
-        "	\n"+
+        "    \n"+
         "    ?bachelordegree <http://dbpedia.org/ontology/sex> \"Both sexes\".\n"+
         "    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value .\n"+
+        "    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> \"Total persons\" .\n"+
         "    \n"+
-        "    BIND ( IF(?degree in (\"Doctorate (Ph.D.)\"), ?degree_value, 0 ) as ?nodegreesum )\n"+
+        "    BIND ( IF(?degree in (\"Doctorate (Ph.D.)\"), ?degree_value, 0 ) as ?degreesum )\n"+
         "   \n"+
         "    \n"+
         "}\n"+
         "GROUP BY ?c ?mean ?secSchoolValue ?averageEduEndValue\n"+
-        "ORDER BY DESC(?nodegree_perc)\n"+
+        "ORDER BY DESC(?PercentageOfPhDHolders)\n"+
         "limit 10\n"+
         "\n";
     async function getResultList() {

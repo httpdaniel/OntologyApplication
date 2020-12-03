@@ -17,11 +17,11 @@ function Q2() {
     let [response, setResponse] = React.useState({});
     let query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"+
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"+
-        "select  ?c ?mean  (SUM(xsd:integer(?degree_value)) as ?degree_sum) where {\n"+
-        "    ?s rdf:type <http://example.org/csv/MeanEarningRecord> .\n"+
-        "    ?s <http://dbpedia.org/ontology/censusYear> \"2018\" .\n"+
-        "    ?s <http://dbpedia.org/ontology/county> ?c .\n"+
-        "    ?s <http://dbpedia.org/ontology/average> ?mean .\n"+
+        "select  (?c as ?CountyName) (?ageeduceased_value as ?AgeEducationCeased)  (SUM(xsd:integer(?degree_value)) as ?DegreeHolders) where {\n"+
+        "    ?ageeduceased <http://dbpedia.org/ontology/county> ?c .\n"+
+        "    ?ageeduceased <http://dbpedia.org/ontology#censusYear> \"2016\" .\n"+
+        "    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#statisticsCategory> \"Average_Age_Education_Ceased_(Number)\".\n"+
+        "    ?ageeduceased <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?ageeduceased_value .\n"+
         "    \n"+
         "    ?bachelordegree <http://dbpedia.org/ontology/county> ?c .\n"+
         "    ?bachelordegree <http://dbpedia.org/ontology#censusYear> \"2016\" .\n"+
@@ -33,10 +33,11 @@ function Q2() {
         "    )\n"+
         "    \n"+
         "    ?bachelordegree <http://dbpedia.org/ontology/sex> \"Both sexes\".\n"+
-        "    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value\n"+
+        "    ?bachelordegree <http://rdf-vocabulary.ddialliance.org/discovery#frequency> ?degree_value .\n"+
+        "    ?bachelordegree <http://xmlns.com/foaf/0.1/#age> \"Total persons\" .\n"+
         "}\n"+
-        "GROUP BY ?c ?mean\n"+
-        "ORDER BY DESC(?degree_sum)\n"+
+        "GROUP BY ?c ?mean ?ageeduceased_value\n"+
+        "ORDER BY ASC(?degreeHolder_sum)\n"+
         "limit 10\n"+
         "\n"+
         "\n";
