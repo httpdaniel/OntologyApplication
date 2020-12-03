@@ -4,7 +4,7 @@ An interactive ontology-driven application
 
 ## Overview
 
-For this project we used a linked-data approach to model the state of education and economic status in Ireland, on a county-by-county level and individual level.
+For this project we created a knowledge graph to model the state of education and economic status in Ireland, on a county-by-county level and individual level.
 
 We first aggregated 4 open datasets, and they were as follows:
 
